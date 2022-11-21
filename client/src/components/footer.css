@@ -6,9 +6,8 @@
     justify-content: space-evenly;
     background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
     border: 2px solid black;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: 600px;
 }
   
 
