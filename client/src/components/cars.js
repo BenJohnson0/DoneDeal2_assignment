@@ -45,26 +45,26 @@ const HomePageHeader = () => {
 const Car = ({ name, Engine, Reg, Colour, Price }) => {
     if (!name) return <div />;
     return (
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <h5>{name}</h5>
-              </td>
-              <td>
-                <h5>{Engine}</h5>
-              </td>
-              <td>
-                <h4>{Reg}</h4>
-              </td>
-              <td>
-                <p>{Colour}</p>
-              </td>
-              <td>
-                <p>{Price}</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <table className="carsTable">
+        <tbody>
+          <tr>
+            <td className="tdElement">
+              <h5>{name}</h5>
+            </td>
+            <td className="tdElement">
+              <h5>{Engine}</h5>
+            </td>
+            <td className="tdElement">
+              <h4>{Reg}</h4>
+            </td>
+            <td className="tdElement">
+              <p>{Colour}</p>
+            </td>
+            <td className="tdElement">
+              <p>{Price}</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   };

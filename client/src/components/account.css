@@ -3,7 +3,7 @@
     height: 500px;
     max-width: 1000px;
     border: 2px solid black;
-    margin: 100px auto;
+    margin: 60px auto;
     display: grid;
     grid-template-columns: 200px 800px;
 
@@ -107,7 +107,7 @@ input[type=password] {
   padding: 15px;
   margin: 10px 0 22px 0;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   box-shadow: 2px 2px ;
   background: #f1f1f1;
 }
