@@ -1,6 +1,7 @@
 .footergrid-container {
     margin-top: 150px;  
     display: grid;
+    height: 550px;
     grid-template-columns: 400px 400px;
     justify-content: space-evenly;
     background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
@@ -11,7 +12,15 @@
 }
   
 
+iframe {
+    height: 350px;
+    width: 500px;
+}
 
+.googlemaps {
+    height: 350px;
+    width: 500px;
+}
 @media screen and (max-width: 600px) {
     .footergrid-container {
         grid-template-columns: 200px 200px;

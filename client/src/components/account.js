@@ -43,7 +43,7 @@ export default function Account() {
         <div id = "logout">
           <h2>Log out</h2>
           <h4>Are you sure you wish to log out?</h4>
-          <button>Yes, log me out</button>
+          <button class = "logoutbutton">Yes, log me out</button>
         </div>
 
       </div>
