@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-import SearchBar from "./searchbar";
  
 export default function Navbar() {
  return (
@@ -60,10 +59,6 @@ export default function Navbar() {
              <NavLink className="nav-link" to="/account">
                Account
              </NavLink>
-             </li>
-
-             <li className="nav-item" class="search-container">
-              <SearchBar/>
              </li>
 
             { /* REMOVE BEFORE DEMO */ }
