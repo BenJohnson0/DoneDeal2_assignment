@@ -81,7 +81,7 @@ export default function Edit() {
        <div className="form-group">
          <label htmlFor="email">Email: </label>
          <input
-           type="text"
+           type="email"
            className="form-control"
            id="email"
            value={form.email}
@@ -92,7 +92,7 @@ export default function Edit() {
        <div className="form-group">
          <label htmlFor="password">Password: </label>
          <input
-           type="text"
+           type="password"
            className="form-control"
            id="password"
            value={form.password}
