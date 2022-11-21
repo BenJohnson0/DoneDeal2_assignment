@@ -1,0 +1,20 @@
+
+.navbar {
+    background: linear-gradient(to bottom, #587cc4, rgb(81, 180, 241));
+}
+
+b {
+    color: rgb(32, 82, 139);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+li {
+    display: inline;
+    padding: 10px 30px;
+}
+
+.search-container {
+    float: right;
+}
+
+

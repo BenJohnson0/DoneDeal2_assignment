@@ -1,0 +1,112 @@
+.accountedit {
+    background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
+    height: 500px;
+    max-width: 1000px;
+    border: 2px solid black;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 200px 800px;
+
+}
+
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu button {
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  color: black; 
+  display: block; 
+  padding: 20px; 
+  text-decoration: none; 
+  width: 200px;
+  font-size: 15px;
+}
+
+.vertical-menu button:hover {
+  background-color: #4090b8;
+}
+
+.vertical-menu button.active {
+  background-color: #acdedc; 
+  color: white;
+  border-right: 0px;
+}
+
+#profilepicture {
+    display: none;
+    background-color: #04AA6D;
+}
+
+#profilepicture img {
+    border-radius: 50px;
+}
+
+#personaldetails {
+    display: block;
+    background-color: #4090b8;
+
+}
+
+#passwordsec {
+    display: none;
+}
+
+#logout {
+    display: none;
+}
+
+
+#logout button {
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    box-shadow: 2.5px 2.5px;
+}
+
+
+/* Add padding to containers */
+.changepasswordcontainer {
+  padding: 8px;
+  margin: auto;
+  max-width: 500px;
+  background-color: #7f61eb;
+}
+
+b {
+    margin: 0px;
+    padding: 0px;
+}
+
+label {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Full-width input fields */
+input[type=password] {
+  width:50%;
+  padding: 15px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: 2px solid black;
+  box-shadow: 2px 2px ;
+  background: #f1f1f1;
+}
+
+
+.confirmbtn {
+  background-color: #7f61eb;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  cursor: pointer;
+  width: 25%;
+}
+
+.confirmbtn:hover {
+  opacity:1;
+}
