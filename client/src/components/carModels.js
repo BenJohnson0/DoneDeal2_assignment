@@ -75,6 +75,13 @@ export const carData = [
       "Reg":"181-D-332",
       "Colour":"Green",
       "Price":"€5,000"
-  }
+  },
+  {
+    "name":"Nissan Micra",
+        "Engine":"1.3",
+        "Reg":"16-G-832",
+        "Colour":"Red",
+        "Price":"€3,000"
+    }
 
 ]
