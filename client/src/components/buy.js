@@ -1,7 +1,12 @@
+import React from "react";
+import { Cars } from "./cars.js";
+
+
+
 export default function Buy() {
     return (
         <div>
-            <h1>BUY PAGE</h1>
+            <Cars />
         </div>
     )
 }
