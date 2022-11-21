@@ -1,21 +1,63 @@
-.container {
-    float: center;
-    width: 50%;
-    outline: 3px solid rgb(32, 82, 139);
-    margin-top: 50px;
-    border-radius: 8px;
-    padding: 5px;
-}
-
-#loginBtn {
-    background-color: rgb(32, 82, 139);
-    color: #ffffff;
-    margin-top: 30px;
+.app {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 67vh;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #f8f9fd;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #587cc4, rgb(81, 180, 241));;
+    border: 1px solid #1601d2;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background: #5780c6;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .list-container {
+    display: flex;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .title {
+    font-size: 25px;
     margin-bottom: 20px;
-    position: relative;
-    margin-left: 43%;
-}
-
-#regTitle {
-    margin-left: 43%;
-}
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+  }

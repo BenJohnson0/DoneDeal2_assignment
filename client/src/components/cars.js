@@ -35,22 +35,22 @@ const HomePageHeader = () => {
 const Car = ({ name, Engine, Reg, Colour, Price }) => {
     if (!name) return <div />;
     return (
-      <table>
+      <table className="carsTable">
         <tbody>
           <tr>
-            <td>
+            <td className="tdElement">
               <h5>{name}</h5>
             </td>
-            <td>
+            <td className="tdElement">
               <h5>{Engine}</h5>
             </td>
-            <td>
+            <td className="tdElement">
               <h4>{Reg}</h4>
             </td>
-            <td>
+            <td className="tdElement">
               <p>{Colour}</p>
             </td>
-            <td>
+            <td className="tdElement">
               <p>{Price}</p>
             </td>
           </tr>

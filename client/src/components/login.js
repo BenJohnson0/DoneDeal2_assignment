@@ -1,74 +1,77 @@
-import './login.css';
-import React from 'react';
-//import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import "./login.css";
 
-/*
-async function loginUser(credentials) {
-  return fetch('http://localhost:8080/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
+function Login() {
+  
+  const [errorMessages, setErrorMessages] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const database = [
+    {
+      username: "benj",
+      password: "12345"
     },
-    body: JSON.stringify(credentials)
-  })
-    .then(data => data.json())
- }
+    {
+      username: "carlt",
+      password: "67890"
+    }
+  ];
 
-export default function Login({ setToken }) {
+  const errors = {
+    uname: "Incorrect Username! Try again.",
+    pass: "incorrect Password! Try again."
+  };
 
-  const [name, setName] = useState();
-  const [password, setPassword] = useState();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  const handleSubmit = async e => {
-    e.preventDefault();
-    const token = await loginUser({
-      name,
-      password
-    });
-    setToken(token);
-  }
-  */
-      
-  export default function Login() {
-    return (
-        <div class="container">
-     <h3 id="regTitle">Login</h3>
-     <form /*onSubmit={handleSubmit}*/>
-       <div className="form-group">
-         <label htmlFor="name">Name</label>
-         <input
-           //onChange={e => setName(e.target.value)}
-           type="text"
-           className="form-control"
-           id="name"
-         />
-       </div>
+    var { uname, pass } = document.forms[0];
+    const userData = database.find((user) => user.username === uname.value);
 
-       <div className="form-group">
-         <label htmlFor="password">Password</label>
-         <input
-           //onChange={e => setPassword(e.target.value)}
-           type="text"
-           className="form-control"
-           id="password"
-         />
-       </div>
+    if (userData) {
+      if (userData.password !== pass.value) {
+        setErrorMessages({ name: "pass", message: errors.pass });
+      } else {
+        setIsSubmitted(true);
+      }
+    } else {
+      setErrorMessages({ name: "uname", message: errors.uname });
+    }
+  };
 
-       <div className="form-group">
-         <input
-           id="loginBtn"
-           type="submit"
-           value="Login"
-           className="btn btn-primary"
-         />
-       </div>
-     </form>
-   </div>
-    )
-  }
+  const renderErrorMessage = (name) =>
+    name === errorMessages.name && (
+      <div className="error">{errorMessages.message}</div>
+    );
 
-  /*
-  Login.propTypes = {
-    setToken: PropTypes.func.isRequired
-  }
-  */
+  const renderForm = (
+    <div className="form">
+      <form onSubmit={handleSubmit}>
+        <div className="input-container">
+          <label>Username </label>
+          <input type="text" name="uname" required />
+          {renderErrorMessage("uname")}
+        </div>
+        <div className="input-container">
+          <label>Password </label>
+          <input type="password" name="pass" required />
+          {renderErrorMessage("pass")}
+        </div>
+        <div className="button-container">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  );
+
+  return (
+    <div className="app">
+      <div className="login-form">
+        <div className="title">Sign In</div>
+        {isSubmitted ? <div>Login successful.</div> : renderForm}
+      </div>
+    </div>
+  );
+}
+
+export default Login;
