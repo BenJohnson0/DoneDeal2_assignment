@@ -6,7 +6,7 @@ export default function Account() {
     return (
         <div class = "accountedit">
         <div class="vertical-menu">
-            <button onClick={window['displayprofilepic']}>Profile Picture!!</button>
+            <button onClick={window['displayprofilepic']}>Profile Picture</button>
             <button onClick={window['displayprofiledetails']}>Personal Details</button>
             <button onClick={window['displayprofilepass']}>Password and Security</button>
             <button onClick={window['displayprofilelogout']}>Log out</button>
