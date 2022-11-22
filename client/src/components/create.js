@@ -45,7 +45,7 @@ export default function Create() {
      <h3>Register</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-         <label htmlFor="name">Name</label>
+         <label htmlFor="name">Name</label><br></br>
          <input
            type="text"
            className="form-control"
@@ -67,7 +67,7 @@ export default function Create() {
        </div>
 
        <div className="form-group">
-         <label htmlFor="password">Password</label>
+         <label htmlFor="password">Password</label><br></br>
          <input
            type="password"
            className="form-control"

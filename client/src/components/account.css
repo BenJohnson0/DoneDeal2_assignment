@@ -50,8 +50,7 @@
 }
 
 #personaldetails {
-    display: block;
-    background-color: #4090b8;
+    display: block;background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
     text-align: center;
 
 }

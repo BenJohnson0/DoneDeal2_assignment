@@ -1,0 +1,26 @@
+.maincontainerhelp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.helpcontainer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 60vh 60vh;
+    justify-content: space-evenly;
+    width: 140vh;
+    margin: auto;
+}
+
+.contactusdiv {
+    padding: 2rem;
+    border: 2px solid black;
+    width: 60vh;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactusdiv h3 {
+    margin-top: 5px;
+}

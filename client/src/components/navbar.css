@@ -3,10 +3,15 @@
     background: linear-gradient(to bottom, #587cc4, rgb(81, 180, 241));
 }
 
+.navbar-brand {
+    margin-left: 5px;
+}
+
 b {
     color: rgb(32, 82, 139);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
+
 
 li {
     display: inline;
@@ -15,6 +20,15 @@ li {
 
 .search-container {
     float: right;
+}
+
+.nav-link {
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    color: black;
+    text-shadow: .1px .1px .1px black;
 }
 
 
