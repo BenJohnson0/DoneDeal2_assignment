@@ -26,9 +26,19 @@ export const Cars = () => {
 
 const HomePageHeader = () => {
     return (
+      <div>
       <header className="header">
         <h2>Cars for sale</h2>
       </header>
+
+      <div className = "carheaders">
+        <div>Car Make</div>
+        <div>Engine Size</div>
+        <div>Registration</div>
+        <div>Colour</div>
+        <div>Price</div>
+      </div>
+      </div>
     );
   };
 

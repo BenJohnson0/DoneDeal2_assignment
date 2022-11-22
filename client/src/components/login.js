@@ -54,7 +54,7 @@ function Login() {
         </div>
         <div className="input-container">
           <label>Password </label>
-          <input type="password" name="pass" required />
+          <input type="text" name="pass" required />
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">

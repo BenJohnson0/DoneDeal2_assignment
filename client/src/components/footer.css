@@ -1,17 +1,25 @@
 .footergrid-container {
     margin-top: 0px;  
     display: grid;
+    height: 550px;
     grid-template-columns: 400px 400px;
     justify-content: space-evenly;
     background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
     border: 2px solid black;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: 600px;
 }
   
 
+iframe {
+    height: 350px;
+    width: 500px;
+}
 
+.googlemaps {
+    height: 350px;
+    width: 500px;
+}
 @media screen and (max-width: 600px) {
     .footergrid-container {
         grid-template-columns: 200px 200px;

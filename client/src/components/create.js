@@ -42,7 +42,7 @@ export default function Create() {
  
  return (
    <div class="container">
-     <h3 id="regTitle">Register for DoneDeal2</h3>
+     <h3>Register</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
          <label htmlFor="name">Name</label>

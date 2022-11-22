@@ -37,7 +37,12 @@
 
 #profilepicture {
     display: none;
-    background-color: #04AA6D;
+    text-align: center;
+}
+
+#profilepicture a {
+  text-decoration: none;
+  color: #000000;
 }
 
 #profilepicture img {
@@ -47,17 +52,23 @@
 #personaldetails {
     display: block;
     background-color: #4090b8;
+    text-align: center;
 
 }
 
 #passwordsec {
     display: none;
+    text-align: center;
 }
 
 #logout {
     display: none;
+    text-align: center;
 }
 
+#logout h2 {
+  margin-top: 15px;
+}
 
 #logout button {
     padding: 10px;
@@ -66,13 +77,18 @@
     box-shadow: 2.5px 2.5px;
 }
 
+.logoutbutton:hover {
+  opacity:1;
+  color: black;
+  background-color: white;
+}
+
 
 /* Add padding to containers */
 .changepasswordcontainer {
   padding: 8px;
   margin: auto;
   max-width: 500px;
-  background-color: #7f61eb;
 }
 
 b {
@@ -98,7 +114,7 @@ input[type=password] {
 
 
 .confirmbtn {
-  background-color: #7f61eb;
+  background-color: #000000;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -109,4 +125,6 @@ input[type=password] {
 
 .confirmbtn:hover {
   opacity:1;
+  color: black;
+  background-color: white;
 }
