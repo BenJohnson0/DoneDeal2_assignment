@@ -14,7 +14,7 @@
   input[type="text"],
   input[type="password"] {
     height: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(179, 46, 46, 0.2);
   }
   
   input[type="submit"] {
@@ -62,3 +62,9 @@
     gap: 10px;
     margin: 10px;
   }
+
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

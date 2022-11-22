@@ -1,6 +1,112 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 import "./login.css";
 
+async function loginUser(credentials) {
+  return fetch('http://localhost:8080/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(credentials)
+  })
+    .then(data => data.json())
+ }
+
+function Login({ setToken }) {
+
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const token = await loginUser({
+      username,
+      password
+    });
+    setToken(token);
+  }
+
+  return(
+    <div className="login-wrapper">
+      <h1>Please Log In</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          <p>Username</p>
+          <input type="text" onChange={e => setUserName(e.target.value)}/>
+        </label>
+        <label>
+          <p>Password</p>
+          <input type="password" onChange={e => setPassword(e.target.value)}/>
+        </label>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  )
+}
+
+Login.propTypes = {
+  setToken: PropTypes.func.isRequired
+}
+
+export default Login;
+
+/*
+class UserAccess extends React.Component {
+  constructor(props) { 
+      super(props);
+      this.state = {
+          isLoggedIn: false,
+      }
+  }
+
+  updateUserState = () => {
+      this.setState((state) => {
+          return {
+              isLoggedIn: !state.isLoggedIn,
+          };
+      });
+  }
+
+  render() {
+      return (
+
+          <div>
+              <div><h4>User state:</h4> { this.state.isLoggedIn.toString() }</div>
+              { (this.state.isLoggedIn && <div>Welcome back</div>) || <div>Please login to continue</div> }
+
+              <div className="form">
+                <form onSubmit={this.updateUserState}>
+                  <div className="input-container">
+                    <label>Username </label>
+                    <input type="text" name="uname" required />
+                  </div>
+                  <div className="input-container">
+                    <label>Password </label>
+                    <input type="password" name="pass" required />
+                  </div>
+                  <div className="button-container">
+                  <input type="submit" onSubmit={this.updateUserState}></input>
+                  </div>
+                </form>
+              </div>
+          </div>
+      );
+  }
+}
+
+export default class App extends React.Component {
+  render() {
+      return (
+          <UserAccess />
+      );
+  }
+}
+*/
+
+/*
 function Login() {
   
   const [errorMessages, setErrorMessages] = useState({});
@@ -75,3 +181,4 @@ function Login() {
 }
 
 export default Login;
+*/

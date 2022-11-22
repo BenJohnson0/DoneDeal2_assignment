@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
  
 import Navbar from "./components/navbar";
@@ -14,39 +14,33 @@ import Account from "./components/account";
 import Help from "./components/help";
 import Login from "./components/login";
 
-const App = () => {
+function App() {
 
-  /*
   const [token, setToken] = useState();
 
   if(token) {
     return <Login setToken={setToken} />
   }
-  */
 
- return (
-   <div>
-     <Navbar />
-     <Routes>
-       <Route exact path="/" element={<Home />} />
-       <Route path="/users" element={<RecordList />} />
-       <Route path="/edit/:id" element={<Edit />} />
-       <Route path="/create" element={<Create />} />
-       <Route path="/buy" element={<Buy />} />
-       <Route path="/sell" element={<Sell />} />
-       <Route path="/favourites" element={<Favourites />} />
-       <Route path="/account" element={<Account />} />
-       <Route path="/help" element={<Help />} />
-       <Route path="/login" element={<Login />} />
-     </Routes>
-     <Footer />
-
-     
-   </div>
-
-   
- );
-};
- 
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/users" element={<RecordList />} />
+        <Route path="/edit/:id" element={<Edit />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/buy" element={<Buy />} />
+        <Route path="/sell" element={<Sell />} />
+        <Route path="/favourites" element={<Favourites />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer />
+    </div> 
+  );
+}
+  
 export default App;
 
