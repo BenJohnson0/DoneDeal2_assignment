@@ -85,6 +85,8 @@ class UserAccess extends React.Component {
                     <label>Password </label>
                     <input type="password" name="pass" required />
                   </div>
+
+                  <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
                   <div className="button-container">
                     <input type="submit" onSubmit={this.updateUserState}></input>
                   </div>
