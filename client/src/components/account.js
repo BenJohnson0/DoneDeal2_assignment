@@ -22,7 +22,7 @@ class UserAccess extends React.Component {
       return (
 
           <div class = "accountmaindiv">
-              <div><h4>Is User logged in?</h4> { this.state.isLoggedIn.toString() }</div>
+              <div><p>Login state: { this.state.isLoggedIn.toString() }</p> </div>
               { (this.state.isLoggedIn &&  <div class = "accountedit">
         <div class="vertical-menu">
             <button onClick={window['displayprofilefavourites']}>Favourite Ads</button>
@@ -79,7 +79,7 @@ class UserAccess extends React.Component {
                 <form onSubmit={this.updateUserState}>
                   <div className="input-container">
                     <label>Username </label>
-                    <input type="password" name="uname" required />
+                    <input type="text" name="uname" required />
                   </div>
                   <div className="input-container">
                     <label>Password </label>
