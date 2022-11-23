@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import "./app.css";
  
 import Navbar from "./components/navbar";
 import RecordList from "./components/recordList";
@@ -23,7 +24,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id = "background">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />

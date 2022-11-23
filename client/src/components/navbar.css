@@ -1,14 +1,16 @@
 
 .navbar {
-    background: linear-gradient(to bottom, #587cc4, rgb(81, 180, 241));
+    background: #000000;
 }
-
+.navbar h1 {
+    color: #f5d324;
+}
 .navbar-brand {
     margin-left: 5px;
 }
 
 b {
-    color: rgb(32, 82, 139);
+    color: #be003c;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -24,16 +26,17 @@ li {
 
 .nav-link {
     font-size: 22px;
+    color: #be003c;
 }
 
 .nav-link:hover {
-    color: black;
+    color: rgb(255, 255, 255);
     text-shadow: .1px .1px .1px black;
 }
 
 
 #accounticon {
-    color: black;
+    color: #be003c;
     font-size: 30px;
 }
 
@@ -42,4 +45,8 @@ li {
 }
 #account {
     margin-left: 110vh;
+}
+
+app {
+    background-color: #000000;
 }
