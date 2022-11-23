@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./account.css";
+import authContext from "./authContext";
 
+const Account = () => {
 
-export default function Account() {
+  const [authenticated, setAuthenticated] = useState(false);
+
     return (
+      <authContext.Provider value={{ authenticated, setAuthenticated }}>
         <div class = "accountedit">
         <div class="vertical-menu">
             <button onClick={window['displayprofilefavourites']}>Favourite Ads</button>
@@ -52,8 +56,10 @@ export default function Account() {
         </div>
 
       </div>
+      </authContext.Provider>
 
       );
       
     };
     
+export default Account;
