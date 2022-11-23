@@ -106,8 +106,9 @@ label {
 }
 
 /* Full-width input fields */
-input[type=password] {
-  width:50%;
+input[type=password],input[type=text] {
+  width: 25vh;
+  height: 5vh;
   padding: 15px;
   margin: 10px 0 22px 0;
   display: inline-block;
@@ -116,6 +117,16 @@ input[type=password] {
   background: #f1f1f1;
 }
 
+input[type=submit] {
+  padding: 10px;
+  width: 15vh;
+
+}
+
+.button-container input[type=submit]:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
 
 .confirmbtn {
   background-color: #000000;
@@ -131,4 +142,28 @@ input[type=password] {
   opacity:1;
   color: black;
   background-color: white;
+}
+
+#loginbutton {
+  padding: 5 25px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.accountmaindiv {
+  width: 140vh;
+  margin: 40px auto;
+  border: 2px solid black;
+}
+
+.form {
+  border: 2px solid red;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.input-container label {
+  padding: 10px;
 }

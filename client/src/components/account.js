@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import "./account.css";
-import authContext from "./authContext";
 
-const Account = () => {
 
-  const [authenticated, setAuthenticated] = useState(false);
+class UserAccess extends React.Component {
+  constructor(props) { 
+      super(props);
+      this.state = {
+          isLoggedIn: false,
+      }
+  }
 
-    return (
-      <authContext.Provider value={{ authenticated, setAuthenticated }}>
-        <div class = "accountedit">
+  updateUserState = () => {
+      this.setState((state) => {
+          return {
+              isLoggedIn: !state.isLoggedIn,
+          };
+      });
+  }
+
+  render() {
+      return (
+
+          <div class = "accountmaindiv">
+              <div><h4>User state:</h4> { this.state.isLoggedIn.toString() }</div>
+              { (this.state.isLoggedIn &&  <div class = "accountedit">
         <div class="vertical-menu">
             <button onClick={window['displayprofilefavourites']}>Favourite Ads</button>
             <button onClick={window['displayprofilepic']}>Profile Picture</button>
@@ -52,11 +67,40 @@ const Account = () => {
         <div id = "logout">
           <h2>Log out</h2>
           <h4>Are you sure you wish to log out?</h4>
-          <button class = "logoutbutton">Yes, log me out</button>
+          <button class = "logoutbutton" onClick={this.updateUserState}>Yes, log me out</button>
         </div>
 
+      </div>) 
+      
+      || 
+      
+      <div className="form">
+                <form onSubmit={this.updateUserState}>
+                  <div className="input-container">
+                    <label>Username </label>
+                    <input type="password" name="uname" required />
+                  </div>
+                  <div className="input-container">
+                    <label>Password </label>
+                    <input type="password" name="pass" required />
+                  </div>
+                  <div className="button-container">
+                    <input type="submit" onSubmit={this.updateUserState}></input>
+                  </div>
+                </form>
+              </div> }
+          </div>
+      );
+  }
+}
+
+const Account = () => {
+
+    return (
+      <div>
+        <UserAccess />
       </div>
-      </authContext.Provider>
+      
 
       );
       
