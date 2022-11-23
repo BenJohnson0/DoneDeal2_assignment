@@ -37,7 +37,7 @@ export const carData = [
       "Reg":"201-D-38643",
       "Colour":"Black",
       "Price":"€4,000",
-      "Image":"audi.jpg"
+      "Image":"hondacivic.jpg"
   },
 {
   "name":"Peugeot 308",
@@ -45,7 +45,7 @@ export const carData = [
       "Reg":"222-D-1",
       "Colour":"Black",
       "Price":"€21,000",
-      "Image":"audi.jpg"
+      "Image":"peugeot308.jpg"
   },
 {
   "name":"Volkswagen Golf",
@@ -53,7 +53,7 @@ export const carData = [
       "Reg":"11-LS-22783",
       "Colour":"Blue",
       "Price":"€6,000",
-      "Image":"audi.jpg"
+      "Image":"golf.jpg"
   },
 {
  "name": "Fiat Punto",
@@ -61,7 +61,7 @@ export const carData = [
       "Reg":"15-TS-982",
       "Colour":"Black",
       "Price":"€2,000",
-      "Image":"audi.jpg"
+      "Image":"punto.jpg"
   },
 {
   "name":"Mercedes A-Class",
@@ -69,7 +69,7 @@ export const carData = [
       "Reg":"201-WW-49732",
       "Colour":"Blue",
       "Price":"€7,000",
-      "Image":"ford.jpeg"
+      "Image":"aclass.jpeg"
   },
 {
   "name":"Ford Mustang",
@@ -77,7 +77,7 @@ export const carData = [
       "Reg":"08-D-2231",
       "Colour":"Red",
       "Price":"€11,000",
-      "Image":"audi.jpg"
+      "Image":"mustang.jpg"
   },
 {
   "name":"Nissan Leaf",
@@ -85,7 +85,7 @@ export const carData = [
       "Reg":"181-D-332",
       "Colour":"Green",
       "Price":"€5,000",
-      "Image":"audi.jpg"
+      "Image":"leaf.jpg"
   },
   {
     "name":"Nissan Micra",
@@ -93,7 +93,7 @@ export const carData = [
         "Reg":"16-G-832",
         "Colour":"Red",
         "Price":"€3,000",
-        "Image":"audi.jpg"
+        "Image":"micra.jpg"
     }
 
 ]
