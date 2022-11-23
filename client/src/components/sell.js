@@ -9,21 +9,24 @@ export default function Sell() {
 
 
             <div class = "sellform">
+            <form>
                 <label>Car name</label>
-                <input type = "text"></input>
+                <input type = "text"></input><br></br>
 
                 <label>Car engine</label>
-                <input type = "text"></input>
+                <input type = "text"></input><br></br>
 
                 <label>Car Registration Number</label>
-                <input type = "text"></input>
+                <input type = "text"></input><br></br>
 
                 <label>Car price</label>
-                <input type = "text"></input>
+                <input type = "text"></input><br></br>
 
                 <label>Car Image filename</label>
-                <input type = "text"></input>
-                
+                <input type = "text"></input><br></br>
+
+                <button>Sell my car!</button>
+            </form>
             </div>
         </div>
     )

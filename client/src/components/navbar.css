@@ -32,3 +32,14 @@ li {
 }
 
 
+#accounticon {
+    color: black;
+    font-size: 30px;
+}
+
+#accounticon:hover {
+    color: white;
+}
+#account {
+    margin-left: 110vh;
+}
