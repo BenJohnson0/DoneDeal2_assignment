@@ -44,7 +44,7 @@ export default function Create() {
    <div class="container">
      <h3>Register</h3>
      <form onSubmit={onSubmit}>
-       <div className="form-group">
+       <div className="input-container  ">
          <label htmlFor="name">Name</label><br></br>
          <input
            type="text"
@@ -85,6 +85,7 @@ export default function Create() {
            className="btn btn-primary"
          />
        </div>
+       <p>Already have an account? Sign in <a href = "/account">here</a></p>
      </form>
    </div>
  );
