@@ -1,5 +1,6 @@
 import React from "react";
 import "./account.css";
+import PictureUploader from "./fileUploader";
 
 
 class UserAccess extends React.Component {
@@ -34,8 +35,7 @@ class UserAccess extends React.Component {
 
         <div id = "profilepicture">
           <h2>Your Profile Picture</h2>
-          <img alt = '' src = "ford.jpeg"></img><br></br>
-          <a href = 'index.html'>Change your profile picture</a>
+          <PictureUploader />
         </div>
 
         <div id = "personaldetails">
