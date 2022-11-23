@@ -11,13 +11,13 @@ class UserAccess extends React.Component {
       }
   }
 
-  updateUserState = () => {
-      this.setState((state) => {
-          return {
-              isLoggedIn: !state.isLoggedIn,
-          };
-      });
-  }
+updateUserState = () => {
+    this.setState((state) => {
+        return {
+            isLoggedIn: !state.isLoggedIn,
+        };
+    });
+}
 
   render() {
       return (
@@ -35,13 +35,13 @@ class UserAccess extends React.Component {
 
         <div id = "profilepicture">
           <h2>Your Profile Picture</h2>
-          <PictureUploader />
+          <PictureUploader /> 
         </div>
 
         <div id = "personaldetails">
           <h2>Your Details</h2>
 
-          <p>Your name = </p>
+          <p>Your name</p>
         </div>
 
         <div id = "passwordsec">
@@ -76,7 +76,7 @@ class UserAccess extends React.Component {
       
       || 
       
-      <div className="form">
+      (<div className="form">
         <h3>Log in to continue</h3>
                 <form onSubmit={this.updateUserState}>
                   <div className="input-container">
@@ -90,10 +90,10 @@ class UserAccess extends React.Component {
 
                   <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
                   <div className="button-container">
-                    <input type="submit" onSubmit={this.updateUserState}></input>
+                    <input type="submit" onClick={this.updateUserState}></input>
                   </div>
                 </form>
-              </div> }
+              </div>) }
           </div>
       );
   }
@@ -105,8 +105,6 @@ const Account = () => {
       <div>
         <UserAccess />
       </div>
-      
-
       );
       
     };

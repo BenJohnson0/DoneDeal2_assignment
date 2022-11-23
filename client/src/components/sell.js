@@ -8,7 +8,21 @@ export default function Sell() {
             <p>Post your car up for sale here. </p>
 
 
-            <div>
+            <div class = "sellform">
+                <label>Car name</label>
+                <input type = "text"></input>
+
+                <label>Car engine</label>
+                <input type = "text"></input>
+
+                <label>Car Registration Number</label>
+                <input type = "text"></input>
+
+                <label>Car price</label>
+                <input type = "text"></input>
+
+                <label>Car Image filename</label>
+                <input type = "text"></input>
                 
             </div>
         </div>

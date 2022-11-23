@@ -24,3 +24,7 @@
 .contactusdiv h3 {
     margin-top: 5px;
 }
+
+iframe {
+    width: 60vh;
+}
