@@ -153,14 +153,18 @@ input[type=submit] {
 
 .accountmaindiv {
   width: 140vh;
+  padding: 55px;
   margin: 40px auto;
   border: 2px solid black;
 }
 
 .form {
-  border: 2px solid red;
-  padding: 5px;
+  padding: 20px;
   text-align: center;
+  width: 60vh;
+  height: 40vh;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
