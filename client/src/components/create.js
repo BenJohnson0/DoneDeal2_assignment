@@ -72,6 +72,7 @@ export default function Create() {
            type="password"
            className="form-control"
            id="password"
+           minlength="8"
            value={form.password}
            onChange={(e) => updateForm({ password: e.target.value })}
          />

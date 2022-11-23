@@ -24,6 +24,7 @@ export const Home = () => {
         </div>
 
         <div class = "homeitem">
+            <img src="login.jpg"></img>
             <h2>Login</h2>
 
             <p>Login to see your ads performance and to sell your car.</p>
@@ -31,6 +32,7 @@ export const Home = () => {
         </div>
 
         <div class = "homeitem">
+            <img src="signup.jpg"></img>
             <h2>Sign up</h2>
             <p>Create your account today to: </p>
 

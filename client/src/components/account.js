@@ -52,9 +52,9 @@ updateUserState = () => {
           <form action = "">
             <div class = "changepasswordcontainer">
 
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required></input> <br></br>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="8" required></input> <br></br>
 
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required></input><br></br>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" minlength="8" required></input><br></br>
 
             <button type="submit" class="confirmbtn">Confirm</button>
             </div>
@@ -85,7 +85,7 @@ updateUserState = () => {
                   </div>
                   <div className="input-container">
                     <label>Password </label>
-                    <input type="password" name="pass" required />
+                    <input type="password" minlength="8" name="pass" required />
                   </div>
 
                   <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
