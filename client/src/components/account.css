@@ -60,6 +60,11 @@
     text-align: center;
 }
 
+#favouritescontainer {
+  display: none;
+  text-align: center;
+}
+
 #logout {
     display: none;
     text-align: center;

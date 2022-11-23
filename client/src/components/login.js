@@ -42,6 +42,7 @@ function Login({ setToken }) {
         <div>
           <button type="submit">Submit</button>
         </div>
+        <p>Don't have an account? Sign up <a ref="">here</a></p>
       </form>
     </div>
   )

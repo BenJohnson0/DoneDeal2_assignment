@@ -6,6 +6,7 @@ export default function Account() {
     return (
         <div class = "accountedit">
         <div class="vertical-menu">
+            <button onClick={window['displayprofilefavourites']}>Favourite Ads</button>
             <button onClick={window['displayprofilepic']}>Profile Picture</button>
             <button onClick={window['displayprofiledetails']}>Personal Details</button>
             <button onClick={window['displayprofilepass']}>Password and Security</button>
@@ -38,6 +39,10 @@ export default function Account() {
             </div>
           </form>
 
+        </div>
+
+        <div id="favouritescontainer">
+            <h2>Your Favourite Ads</h2>
         </div>
         
         <div id = "logout">
