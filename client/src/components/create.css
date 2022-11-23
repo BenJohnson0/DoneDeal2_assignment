@@ -3,26 +3,29 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 67vh;
+    height: 75vh;
     gap: 5px;
     margin-top: 50px;
     padding: 5px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     width: 60vh;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.container p {
+    font-size: 10px;
+}
 .container h3 {
     text-align: center;
     margin: 5px;
 }
 
 .formgroup label {
-    width: 10vh;
-    margin: auto;
-    text-align: center;
+    padding: 20px;
+    
+
 }
 
 .form-control {
@@ -38,6 +41,18 @@
     position: relative;
 }
 
-#regTitle {
-    margin-left: 10%;
+
+input[type=password],input[type=text], input[type=email]{
+    width: 25vh;
+    height: 5vh;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px ;
+    background: #f1f1f1;
+  }
+
+.form-group input[type=submit] {
+    padding: 20px;
+    width: 25vh;
 }
