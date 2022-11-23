@@ -40,6 +40,8 @@ class UserAccess extends React.Component {
 
         <div id = "personaldetails">
           <h2>Your Details</h2>
+
+          <p>Your name = </p>
         </div>
 
         <div id = "passwordsec">

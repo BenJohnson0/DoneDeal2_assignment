@@ -4,7 +4,8 @@ import "./buy.css";
 
 export const Buy = () => {
   return (
-    <div classname = "carContainer">
+    <div id = "carcontainer" classname = "carContainer">
+        <h2>Cars for sale</h2>
         {carData.map((data, key) => {
           return ( 
             <div key={key}>
