@@ -79,12 +79,14 @@ class UserAccess extends React.Component {
                 <form onSubmit={this.updateUserState}>
                   <div className="input-container">
                     <label>Username </label>
-                    <input type="password" name="uname" required />
+                    <input type="text" name="uname" required />
                   </div>
                   <div className="input-container">
                     <label>Password </label>
                     <input type="password" name="pass" required />
                   </div>
+
+                  <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
                   <div className="button-container">
                     <input type="submit" onSubmit={this.updateUserState}></input>
                   </div>
