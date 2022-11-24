@@ -20,9 +20,9 @@ Upon cloning the repo,
 All user details are stored in the MongoDB collection, so this must be running before the app is started. 
 
 # Visuals
-Yellow #f5d324
-Red #be003c
-Black #000000
+- Yellow #f5d324
+- Red #be003c
+- Black #000000
 
 Inspired by the Belgium flag.
 
