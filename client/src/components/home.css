@@ -38,8 +38,6 @@
 @media screen and (max-width: 800px) {
   .homeitem {
     width: 50vh;
-
-
   }
 
   #homecontainer {
@@ -51,4 +49,7 @@
     height: 20vh;
     width: 20vh;
   }
+
+  
+  
 }

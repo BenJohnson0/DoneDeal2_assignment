@@ -10,6 +10,26 @@ export default function Navbar() {
        <NavLink className="navbar-brand" to="/"> 
        <h1 id="title">Done<b>Deal</b>2</h1>
        </NavLink>
+
+       <li className="mobilenavitem">
+             <NavLink className="nav-link" to="/buy">
+               Buy
+             </NavLink>
+             </li>
+
+             <li className="mobilenavitem">
+             <NavLink className="nav-link" to="/sell">
+               Sell
+             </NavLink>
+             </li>	
+
+             <li id = "account" className="nav-item">
+             <NavLink className="mobilenavitem" to="/account">
+                  <i id = "accounticon" class="fa fa-user"></i>
+             </NavLink>
+             </li>
+
+       
  
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
          <ul className="navbar-nav ml-auto">

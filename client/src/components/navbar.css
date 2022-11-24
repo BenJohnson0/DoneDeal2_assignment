@@ -60,8 +60,19 @@ li {
         display: inline;
     }
 
-    li {
-        display: list-item;
-    }
+    .navbar {
+        
+        width: 65vh;
+      }
+    
+    .mobilenavitem .nav-link {
+        color: #f5d324;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    
+      #account {
+        margin-left: 10px;
+      }
 }
 
