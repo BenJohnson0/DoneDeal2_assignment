@@ -12,13 +12,14 @@
     width: 60vh;
     padding: 2rem;
     color: #f5d324;
-    background-color : #be003c;
+    background-color : #fe0000;
     box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
 }
 
 .container p {
     font-size: 10px;
 }
+
 .container h3 {
     text-align: center;
     margin: 5px;
@@ -26,7 +27,8 @@
 
 .formgroup label {
     padding: 20px;
-    
+    font-weight: bold;
+    font-size: 20px;
 
 }
 
@@ -36,11 +38,18 @@
 }
 
 #submitBtn {
-    background-color: rgb(32, 82, 139);
-    color: #ffffff;
+    background-color: #f5d324;
+    color: #000000;
+    border: #fe0000;
+    font-weight: bold;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
     position: relative;
+}
+
+#submitBtn:hover {
+    background-color: white;
 }
 
 

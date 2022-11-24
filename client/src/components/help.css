@@ -30,5 +30,12 @@
 }
 
 iframe {
-    width: auto;
+    width: 40vh;
+}
+
+@media screen and (max-width: 600px) { 
+    .helpcontainer {
+        display: block;
+        width: 60vh;
+    }
 }

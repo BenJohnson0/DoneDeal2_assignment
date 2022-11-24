@@ -57,13 +57,14 @@
 
 @media screen and (max-width: 600px) {
   .featureddiv {
-    grid-template-columns: 200px;
-    max-width: 350px;
+    display: block;
+    max-width: 70vh;
     margin: auto;
   }
 
   .ad {
-    max-width: 200px;
+    max-width: 50vh;
+    font-size: 20px;
   }
 
   .ad img {
@@ -75,6 +76,7 @@ hr {
   width: 100px;
   height: 2.5px;
   margin: 2px auto;
+  display: none;
   color: #f5d324;
   background-color: #f5d324;
 }

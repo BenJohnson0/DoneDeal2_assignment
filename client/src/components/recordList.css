@@ -1,17 +1,25 @@
 .users {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+  background-color : #fe0000;
+    color: #f5d324;
     max-width: 70vh;
-    margin: 80px auto;
-    box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
+    margin: 30px auto;
     padding: 20px;
+}
+
+table {
+    background-color: transparent;
+    color: transparent;
 }
 
 
 th {
-    color: rgb(0, 0, 0);
+    color: #f5d324;
 }
 
 tr {
-    color: rgb(0, 0, 0);
+    color: #f5d324;
+}
+
+.users a {
+    text-decoration: none;
 }

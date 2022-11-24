@@ -44,7 +44,7 @@ export default function Create() {
    <div class="container">
      <h3>Register</h3>
      <form onSubmit={onSubmit}>
-       <div className="input-container  ">
+       <div className="input-container ">
          <label htmlFor="name">Name</label><br></br>
          <input
            type="text"

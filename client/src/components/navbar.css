@@ -54,6 +54,14 @@ li {
     margin-left: 110vh;
 }
 
-app {
-    background-color: #000000;
+
+@media screen and (max-width: 600px) {
+    .nav-item {
+        display: inline;
+    }
+
+    li {
+        display: list-item;
+    }
 }
+
