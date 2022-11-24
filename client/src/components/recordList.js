@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./recordList.css";
  
 const Record = (props) => (
  <tr>
@@ -67,7 +68,7 @@ export default function RecordList() {
  
 
  return (
-   <div>
+   <div className="users">
      <h3>Registered Users</h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
