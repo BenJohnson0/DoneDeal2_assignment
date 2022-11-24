@@ -2,7 +2,7 @@
     background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
     height: 500px;
     max-width: 1000px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     margin: 60px auto;
     display: grid;
     grid-template-columns: 200px 800px;

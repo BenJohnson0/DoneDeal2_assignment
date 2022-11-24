@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./account.css";
 import PictureUploader from "./fileUploader";
 
@@ -11,14 +11,39 @@ class UserAccess extends React.Component {
       }
   }
 
-updateUserState = () => {
+  updateUserState = () => {
     this.setState((state) => {
+      return {
+          isLoggedIn: !state.isLoggedIn,
+      };
+  });
+}
+
+/*
+updateUserState = (uname, pass) => {
+
+  const [user, setUser] = useState([]);
+
+    const fetchData = () => {
+    return fetch("http://localhost:5000/record/")
+          .then((response) => response.json())
+          .then((data) => setUser(data));
+  }
+
+    useEffect(() => {
+      fetchData();
+    },[])
+
+    if ( (user.name = uname) && (user.password = pass) ) {
+      this.setState((state) => {
         return {
             isLoggedIn: !state.isLoggedIn,
         };
     });
+  }
 }
-
+*/
+    
   render() {
       return (
 
