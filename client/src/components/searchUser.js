@@ -3,7 +3,7 @@ const SearchUser = (
 ) => {
   return (
     <div className="SearchUser">
-      <input placeholder="Search User" onChange={e => setSearchString(e.target.value)}/>
+      <input placeholder="Search..." onChange={e => setSearchString(e.target.value)}/>
     </div>
   );
 }

@@ -1,19 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { carData } from "./carModels";
+import SearchUser from "./searchUser";
 import "./buy.css";
 
 export const Buy = () => {
+
+  const [searchedArray, setSearchedArray] = React.useState(carData);
+  const [searchString, setSearchString] = useState("");
+
+  React.useEffect(() => {
+    if(searchString.length === 0){
+      setSearchedArray(carData)
+    } else {
+      const searchedObjects = []
+      carData.forEach((carObj, index) => {
+        Object.values(carObj).every((onlyValues, valIndex) => {
+          if(onlyValues.toLowerCase().includes(searchString.toLowerCase())){
+            searchedObjects.push(carObj)
+            return;
+          }
+        })
+      })
+      setSearchedArray(searchedObjects) 
+    }
+  }, [searchString])
+
   return (
     <div id = "carcontainer" classname = "carContainer">
         <h2>Cars for sale</h2>
-
         <h3>Search for a car</h3>
 
         <div className="searchbar">
-          <form action="#">
-            <input type="text" placeholder="Search.."></input>
-            <button type="submit">Submit</button>
-          </form>
+        <p><input
+          type="text"
+          value={searchString}
+          onChange={(e) => setSearchString(e.target.value)}
+          placeholder="Search here.."
+        />
+      </p>
+      <pre>
+        {JSON.stringify(searchedArray, null, '    ')}
+      </pre>
         </div>
 
         {carData.map((data, key) => {
