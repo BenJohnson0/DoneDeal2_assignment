@@ -33,6 +33,7 @@ Inspired by the Belgium flag.
 - https://github.com/paul-kelly-dit/web-application-architecture (login state rendering)
 - https://getbootstrap.com/docs/5.0/examples/cheatsheet/ (bootstrap)
 - https://www.pluralsight.com/guides/load-and-render-json-data-into-react-components (car models -> JSON)
+- https://akashmittal.com/search-json-reactjs/ (Search filtering)
 
 # Credits
 Created by Carl Tallon (frontend) & Ben Johnson (backend)
