@@ -73,6 +73,7 @@ updateUserState = (uname, pass) => {
           <p>Your Email</p>
 
           <p class = "userdetailsholder">Email</p>
+          
         </div>
 
         <div id = "passwordsec">
@@ -114,16 +115,21 @@ updateUserState = (uname, pass) => {
                 <form onSubmit={this.updateUserState}>
                   <div className="input-container">
                     <label>Username </label>
-                    <input type="text" name="uname" required />
+                    <input type="text" 
+                           name="uname" 
+                           required />
                   </div>
                   <div className="input-container">
                     <label>Password </label>
-                    <input type="password" minlength="8" name="pass" required />
+                    <input type="password"
+                     minlength="8" 
+                     name="pass"
+                     required />
                   </div>
 
                   <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
                   <div className="button-container">
-                    <input type="submit" onClick={this.updateUserState}></input>
+                    <input type="submit"></input>
                   </div>
                 </form>
               </div>) }
