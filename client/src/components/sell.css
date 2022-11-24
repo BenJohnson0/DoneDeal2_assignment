@@ -37,4 +37,10 @@
         max-width: 40vh;
         margin: none;
     }
+
+    .sellcontainer {
+        width: 60vh;
+    }
+
+    
 }

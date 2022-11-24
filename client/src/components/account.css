@@ -3,8 +3,6 @@
     color: #f5d324;
     height: 500px;
     max-width: 1000px;
-    border: 2px solid rgb(243, 3, 3);
-    border: 2px solid rgb(0, 0, 0);
     margin: 60px auto;
     display: grid;
     grid-template-columns: 200px 800px;
@@ -16,7 +14,7 @@
     width: 200px;
 }
 
-.vertical-menu button {
+.verticalmenubutton  {
   background-color: #f5d324;
   
   color: black; 
@@ -27,20 +25,18 @@
   font-size: 15px;
 }
 
-.vertical-menu button:hover {
+.verticalmenubutton:hover {
   background-color: #fe0000;
 }
 
-.vertical-menu button.active {
-  background-color: #acdedc; 
+.verticalmenubutton.active {
+  background-color: #000000; 
   color: white;
   border-right: 0px;
 }
 
 #profilepicture {
     display: none;
-    text-align: center;
-    width: 80vh;
 }
 
 #profilepicture a {
@@ -55,28 +51,24 @@
 #personaldetails {
     display: block;
     background-color: #fe0000;
-    text-align: center;
-    width: 80vh;
-
-}
-
-#passwordsec {
-    display: none;
-    text-align: center;
-    width: 80vh;
   
 }
 
+
 #favouritescontainer {
   display: none;
-  text-align: center;
-  width: 80vh;
+  
 }
 
 #logout {
     display: none;
-    text-align: center;
+    
+}
+
+.accounteditdiv {
+  text-align: center;
     width: 80vh;
+
 }
 
 #logout h2 {
@@ -156,7 +148,6 @@ input[type=submit] {
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
-  border: 2px solid black;
   cursor: pointer;
   width: 25%;
 }
@@ -176,9 +167,9 @@ input[type=submit] {
 
 .accountmaindiv {
   width: 140vh;
-  padding: 55px;
+  padding: 5px;
   margin: 40px auto;
-  border: 2px solid black;
+  
 }
 
 .form {
@@ -206,4 +197,27 @@ input[type=submit] {
   width: 40vh;
   margin: auto;
   margin-bottom: 10px ;
+}
+
+@media screen and (max-width: 800px) { 
+  .accountmaindiv {
+    width: 60vh;
+  }
+
+  .accountedit {
+    width: 60vh;
+    grid-template-columns: 15vh 25vh;
+  }
+
+  .vertical-menu {
+    width: 15vh;
+  }
+  .verticalmenubutton {
+    width: 15vh;
+    margin-right: 0px;
+  }
+
+  .accounteditdiv {
+    width: 25vh;
+  }
 }

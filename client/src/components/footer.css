@@ -29,11 +29,12 @@ iframe {
     }
 
     .footergrid-container {
-        height: 50vh;
+        height: 30vh;
     }
 
     .footergrid-container h2 {
-        font-size: 15px;
+        font-size: 25px;
+        margin-top: 20px;
     }
 
     .footergrid-container h4 {
@@ -41,7 +42,7 @@ iframe {
     }
 
     .nav-link {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .googlemaps {

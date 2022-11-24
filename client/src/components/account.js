@@ -52,41 +52,23 @@ updateUserState = (uname, pass) => {
               <div><p>Login state: { this.state.isLoggedIn.toString() }</p> </div>
               { (this.state.isLoggedIn &&  <div class = "accountedit">
         <div class="vertical-menu">
-            <button onClick={window['displayprofilefavourites']}>Favourite Ads</button>
-            <button onClick={window['displayprofilepic']}>Profile Picture</button>
-            <button onClick={window['displayprofiledetails']}>Personal Details</button>
-            <button onClick={window['displayprofilepass']}>Password and Security</button>
-            <button onClick={window['displayprofilelogout']}>Log out</button>
+            <button class = "verticalmenubutton" onClick={window['displayprofilefavourites']}>Favourite Ads</button>
+            <button class = "verticalmenubutton" onClick={window['displayprofilepic']}>Profile Picture</button>
+            <button class = "verticalmenubutton" onClick={window['displayprofiledetails']}>Personal Details</button>
+            <button class = "verticalmenubutton" onClick={window['displayprofilelogout']}>Log out</button>
         </div>
 
-        <div id = "profilepicture">
+        <div class = "accounteditdiv" id = "profilepicture">
           <h2>Your Profile Picture</h2>
           <PictureUploader /> 
         </div>
 
-        <div id = "personaldetails">
-          <h2>Your Details</h2>
-
-          <p></p>
-
-          <p class = "userdetailsholder">Username</p>
-
-          <p></p>
-
-          <p class = "userdetailsholder">Email</p>
-          
-        </div>
-
-        <div id = "passwordsec">
-          <h2>Your Password and security</h2>
-
+        <div class = "accounteditdiv" id = "personaldetails">
           <RecordList />
-
           
-
         </div>
 
-        <div id="favouritescontainer">
+        <div class = "accounteditdiv" id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
 
             <p>The ads you favourite will appear here.</p>
