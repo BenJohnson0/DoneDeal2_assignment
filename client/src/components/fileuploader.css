@@ -1,0 +1,35 @@
+input[type=file] {
+    padding: 10px;
+    
+    font-size: 20px;
+}
+
+.renderpreview {
+    
+    width: 60vh;
+    margin: 20px auto;
+}
+
+.renderpreview img {
+    border: 2px solid black;
+    padding: 10px;
+    width: 20vh;
+    height: auto;
+}
+
+button {
+    padding: 10px 30px;
+    color: #be003c;
+    background-color: #f5d324;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
+}
+
+button:hover {
+    color: #f5d324;
+    background-color: #be003c;
+}
+
+li {
+    color: #be003c;
+}

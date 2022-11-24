@@ -11,18 +11,6 @@ class UserAccess extends React.Component {
       }
   }
 
-  /*
-  verifyUser = (name, pwd, userObj) => {
-    if ( (name = userObj.name) && (pwd = userObj.password) ) {
-      this.setState((state) => {
-        return {
-            isLoggedIn: !state.isLoggedIn,
-        };
-      });
-    }
-  }
-  */
-  
   updateUserState = () => {
     this.setState((state) => {
       return {
@@ -30,6 +18,31 @@ class UserAccess extends React.Component {
       };
   });
 }
+
+/*
+updateUserState = (uname, pass) => {
+
+  const [user, setUser] = useState([]);
+
+    const fetchData = () => {
+    return fetch("http://localhost:5000/record/")
+          .then((response) => response.json())
+          .then((data) => setUser(data));
+  }
+
+    useEffect(() => {
+      fetchData();
+    },[])
+
+    if ( (user.name = uname) && (user.password = pass) ) {
+      this.setState((state) => {
+        return {
+            isLoggedIn: !state.isLoggedIn,
+        };
+    });
+  }
+}
+*/
     
   render() {
       return (
@@ -103,14 +116,14 @@ class UserAccess extends React.Component {
                   <div className="input-container">
                     <label>Username </label>
                     <input type="text" 
-                           name="name" 
+                           name="uname" 
                            required />
                   </div>
                   <div className="input-container">
                     <label>Password </label>
                     <input type="password"
-                     minlength="6" 
-                     name="pwd"
+                     minlength="8" 
+                     name="pass"
                      required />
                   </div>
 
@@ -127,30 +140,30 @@ class UserAccess extends React.Component {
 
 const Account = () => {
 
-    const [user, setUser] = useState([]);
-  
-      const fetchData = () => {
-      return fetch("http://localhost:5000/record/")
-            .then((response) => response.json())
-            .then((data) => setUser(data));
-    }
-  
-      useEffect(() => {
-        fetchData();
-      },[])
+  const [user, setUser] = useState([]);
 
-    return (
-      <div>
-        <UserAccess />
-        <h4>User List</h4>
-        <ul>
-        {user && user.length > 0 && user.map((userObj, index) => (
-            <li key={userObj.id}>{userObj.name}</li>
-          ))}
-        </ul>
-      </div>
-      );
-      
-    };
+    const fetchData = () => {
+    return fetch("http://localhost:5000/record/")
+          .then((response) => response.json())
+          .then((data) => setUser(data));
+  }
+
+    useEffect(() => {
+      fetchData();
+    },[])
+
+  return (
+    <div>
+      <UserAccess />
+      <h4>User List</h4>
+      <ul>
+      {user && user.length > 0 && user.map((userObj, index) => (
+          <li key={userObj.id}>{userObj.name}</li>
+        ))}
+      </ul>
+    </div>
+    );
+    
+  };
     
 export default Account;

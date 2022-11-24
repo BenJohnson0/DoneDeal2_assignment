@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import "./fileuploader.css";
 
 export default class PictureUploader extends React.Component {
   constructor(props) {
@@ -56,14 +57,13 @@ export default class PictureUploader extends React.Component {
   render() {
     return (
       <div>
-        <h5>Profile picture</h5>
-
+        
         <input
           type="file"
           onChange={this.handlePictureSelected.bind(this)}
         />
         <br/>
-        <div>
+        <div class = "renderpreview">
         {this.renderPreview()}
         </div>
         <hr/>

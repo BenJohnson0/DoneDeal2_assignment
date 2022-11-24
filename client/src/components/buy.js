@@ -16,6 +16,7 @@ export const Buy = () => {
       setSearchedArray(carData)
     } else {
       const searchedObjects = []
+      
       carData.forEach((carObj, index) => {
         Object.values(carObj).every((onlyValues, valIndex) => {
           if(onlyValues.toLowerCase().includes(searchString.toLowerCase())){
@@ -49,7 +50,6 @@ export const Buy = () => {
       {JSON.stringify(searchedArray, null, '    ')}
 
         {carData.map((searchedArray) => (
-            <div>
                 <Carad
                 name = {searchedArray.name} 
                 Engine = {searchedArray.Engine}                 
@@ -57,7 +57,6 @@ export const Buy = () => {
                 Colour = {searchedArray.Colour}
                 Price = {searchedArray.Price}
                 Image = {searchedArray.Image} />
-            </div>
         ))}
       </pre>
       </div>

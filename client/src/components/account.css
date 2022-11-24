@@ -8,6 +8,7 @@
     margin: 60px auto;
     display: grid;
     grid-template-columns: 200px 800px;
+    box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
 
 }
 

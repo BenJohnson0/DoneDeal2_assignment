@@ -5,6 +5,18 @@
     
 }
 
+@media screen and (max-width: 600px) { 
+    body {
+        width: 30vh;
+    }
+
+    html {
+        width: 30vh;
+        background-color: rgb(238, 152, 40);
+    }
+}
+
+
 @media screen and (max-width: 800px) { 
     body {
         width: 50vh;
@@ -12,6 +24,18 @@
 
     html {
         width: 50vh;
-        background-color: rgb(238, 152, 40);
+        background-color: rgb(40, 238, 60);
+    }
+}
+
+
+@media screen and (max-width: 900px) { 
+    body {
+        width: 65vh;
+    }
+
+    html {
+        width: 65vh;
+        background-color: rgb(97, 21, 227);
     }
 }
