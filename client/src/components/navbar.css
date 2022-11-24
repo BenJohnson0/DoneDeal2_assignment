@@ -45,34 +45,45 @@ li {
 #accounticon {
     color: #f5d324;
     font-size: 30px;
+    margin-left: 0vh;
 }
+
 
 #accounticon:hover {
     color: white;
 }
+
 #account {
-    margin-left: 110vh;
+    margin-left: 0vh;
 }
 
+.mobilenavitem {
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
-    .nav-item {
-        display: inline;
-    }
 
     .navbar {
-        
         width: 65vh;
-      }
+    }
     
     .mobilenavitem .nav-link {
+        display: block;
         color: #f5d324;
         margin-top: 0px;
         padding-top: 0px;
-      }
-    
-      #account {
-        margin-left: 10px;
-      }
+        display: block;
+    }
+
+    .mobilenavitem {
+        display: block;
+    }
+    #account {
+        margin-left: 0vh;
+    }
+
+    #accounicon {
+        margin-left: 0vh;
+    }
 }
 

@@ -15,19 +15,18 @@ export default function Navbar() {
              <NavLink className="nav-link" to="/buy">
                Buy
              </NavLink>
-             </li>
-
-             <li className="mobilenavitem">
+        </li>
+        <li className="mobilenavitem">
              <NavLink className="nav-link" to="/sell">
                Sell
              </NavLink>
-             </li>	
+        </li>	
 
-             <li id = "account" className="nav-item">
+        <li id = "account" className="nav-item">
              <NavLink className="mobilenavitem" to="/account">
                   <i id = "accounticon" class="fa fa-user"></i>
              </NavLink>
-             </li>
+        </li>
 
        
  
