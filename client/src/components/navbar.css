@@ -1,7 +1,10 @@
 
 .navbar {
     background: #be003c;
+    padding: 0px;
+    margin-bottom: 0px;
 }
+
 .navbar h1 {
     color: #f5d324;
 }

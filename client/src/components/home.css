@@ -31,3 +31,21 @@
   height: 40vh;
   width: 50vh;
 }
+
+
+@media screen and (max-width: 800px) {
+  .homeitem {
+    width: 30vh;
+
+  }
+
+  #homecontainer {
+    display: block;
+    width: 30vh;
+  }
+
+.homeitem img {
+  height: 20vh;
+  width: 20vh;
+}
+}

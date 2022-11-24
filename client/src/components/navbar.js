@@ -25,8 +25,7 @@ export default function Navbar() {
  
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
          <ul className="navbar-nav ml-auto">
-           
-             
+        
             <li className="nav-item">
              <NavLink className="nav-link" to="/buy">
                Buy
@@ -51,9 +50,6 @@ export default function Navbar() {
                   <i id = "accounticon" class="fa fa-user"></i>
              </NavLink>
              </li>
-
-             
-           
          </ul>
        </div>
      </nav>

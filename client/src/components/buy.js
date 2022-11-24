@@ -2,18 +2,23 @@ import React from "react";
 import { carData } from "./carModels";
 import "./buy.css";
 
+
+
+
 export const Buy = () => {
   return (
+
     <div id = "carcontainer" classname = "carContainer">
+
         <h2>Cars for sale</h2>
 
         <h3>Search for a car</h3>
 
         <div className="searchbar">
-          <form action="#">
-            <input type="text" placeholder="Search.."></input>
-            <button type="submit">Submit</button>
-          </form>
+          
+          <input id = "searchbar" placeholder="Search User"/>
+          <button onClick={window['search_cars']}>Search</button>
+            
         </div>
 
         {carData.map((data, key) => {
@@ -52,6 +57,5 @@ const Carad = ({ name, Engine, Reg, Colour, Price, Image }) => {
     
     );
 };
-
 
 

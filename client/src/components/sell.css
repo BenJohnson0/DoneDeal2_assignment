@@ -31,3 +31,10 @@
     color: #be003c;
     background-color: #f5d324;
 }
+
+@media screen and (max-width: 800px) { 
+    .sellform {
+        max-width: 40vh;
+        margin: none;
+    }
+}

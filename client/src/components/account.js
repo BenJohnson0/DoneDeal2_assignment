@@ -111,7 +111,7 @@ updateUserState = (uname, pass) => {
       || 
       
       (<div className="form">
-        <h3>Log in to continue</h3>
+        <h2>Log in to continue</h2>
                 <form onSubmit={this.updateUserState}>
                   <div className="input-container">
                     <label>Username </label>

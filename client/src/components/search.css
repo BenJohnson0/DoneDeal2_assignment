@@ -1,0 +1,25 @@
+/*SEARCH BAR STYLING*/
+.searchbar {
+    border: 2px solid red;
+    margin-bottom: 40px;
+  }
+  
+.searchbar button {
+  padding: 10px;
+  margin: 0px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #be003c;
+  font-size: 17px;
+  color: #f5d324;
+  border: none;
+  cursor: pointer;
+}
+
+.searchbar input[type=text] { 
+  padding: 5px;
+  margin-top: 8px;
+  font-size: 18px;
+  border: none;
+}
