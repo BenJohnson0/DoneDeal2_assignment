@@ -32,6 +32,7 @@ Inspired by the Belgium flag.
 - https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react (uploading files)
 - https://github.com/paul-kelly-dit/web-application-architecture (login state rendering)
 - https://getbootstrap.com/docs/5.0/examples/cheatsheet/ (bootstrap)
+- https://www.pluralsight.com/guides/load-and-render-json-data-into-react-components (car models -> JSON)
 
 # Credits
 Created by Carl Tallon (frontend) & Ben Johnson (backend)
