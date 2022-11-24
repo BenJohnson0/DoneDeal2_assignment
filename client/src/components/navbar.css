@@ -1,19 +1,19 @@
 
 .navbar {
-    background: #be003c;
+    background: #fe0000;
     padding: 0px;
     margin-bottom: 0px;
 }
 
 .navbar h1 {
-    color: #f5d324;
+    color: black;
 }
 .navbar-brand {
     margin-left: 5px;
 }
 
 b {
-    color: #000000;
+    color: #f5d324;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -33,7 +33,7 @@ li {
 }
 
 .nav-link:active {
-    color: #f5d324;
+    color: #fe0000;
 }
 
 .nav-link:hover {

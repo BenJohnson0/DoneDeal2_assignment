@@ -1,5 +1,17 @@
 .users {
-    background-color: #be003c;
-    color: #f5d324;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    max-width: 70vh;
+    margin: 80px auto;
     box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
+    padding: 20px;
+}
+
+
+th {
+    color: rgb(0, 0, 0);
+}
+
+tr {
+    color: rgb(0, 0, 0);
 }

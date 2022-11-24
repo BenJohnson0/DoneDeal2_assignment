@@ -69,7 +69,7 @@ export default function RecordList() {
 
  return (
    <div className="users">
-     <h3>Registered Users</h3>
+     <h3>Your Profile</h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
          <tr>

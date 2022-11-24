@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
+import "./edit.css";
  
 export default function Edit() {
  const [form, setForm] = useState({
@@ -64,36 +65,36 @@ export default function Edit() {
  }
  
  return (
-   <div>
-     <h3>Update Record</h3>
+   <div className="updatedivcontainer">
+     <h3>Update User</h3>
      <form onSubmit={onSubmit}>
-       <div className="form-group">
+       <div className="updateform-group">
          <label htmlFor="name">Name: </label>
          <input
            type="text"
-           className="form-control"
+           className="updateform-control"
            id="name"
            value={form.name}
            onChange={(e) => updateForm({ name: e.target.value })}
          />
        </div>
 
-       <div className="form-group">
+       <div className="updateform-group">
          <label htmlFor="email">Email: </label>
          <input
            type="email"
-           className="form-control"
+           className="updateform-control"
            id="email"
            value={form.email}
            onChange={(e) => updateForm({ email: e.target.value })}
          />
        </div>
 
-       <div className="form-group">
+       <div className="updateform-group">
          <label htmlFor="password">Password: </label>
          <input
            type="password"
-           className="form-control"
+           className="updateform-control"
            id="password"
            value={form.password}
            onChange={(e) => updateForm({ password: e.target.value })}
@@ -101,7 +102,7 @@ export default function Edit() {
        </div>
        <br />
  
-       <div className="form-group">
+       <div className="updateform-group">
          <input
            type="submit"
            value="Update Record"

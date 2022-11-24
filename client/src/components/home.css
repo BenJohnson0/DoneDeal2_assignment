@@ -19,23 +19,26 @@
 }
 
 .homeitem {
-  border: 2px solid black;
+  
   padding: 10px;
   margin-top: 20px;
   color: #f5d324;
-  background-color : #be003c;
+  border-radius: 12px;
+  background-color : #fe0000;
   box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
 }
 
 .homeitem img {
   height: 40vh;
   width: 50vh;
+  border-radius: 10px;
 }
 
 
 @media screen and (max-width: 800px) {
   .homeitem {
     width: 30vh;
+
 
   }
 

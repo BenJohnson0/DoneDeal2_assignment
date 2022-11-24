@@ -1,5 +1,5 @@
 .accountedit {
-    background-color: #be003c;
+    background-color: #fe0000;
     color: #f5d324;
     height: 500px;
     max-width: 1000px;
@@ -28,7 +28,7 @@
 }
 
 .vertical-menu button:hover {
-  background-color: #be003c;
+  background-color: #fe0000;
 }
 
 .vertical-menu button.active {
@@ -54,7 +54,7 @@
 
 #personaldetails {
     display: block;
-    background-color: #be003c;
+    background-color: #fe0000;
     text-align: center;
     width: 80vh;
 
@@ -91,7 +91,7 @@
 }
 
 #logout button:hover { 
-  color: #be003c;
+  color: #fe0000;
   background-color: #f5d324;
 }
 
@@ -140,7 +140,7 @@ input[type=submit] {
 }
 
 .button-container input[type=submit] {
-  color: #be003c;
+  color: #fe0000;
   background-color: #f5d324;
   padding: 10px;
   font-size: 20px;
@@ -148,7 +148,7 @@ input[type=submit] {
 
 .button-container input[type=submit]:hover {
   color: #000000;
-  background-color: #be003c;
+  background-color: #fe0000;
 }
 
 .confirmbtn {
@@ -187,7 +187,7 @@ input[type=submit] {
   width: 60vh;
   height: 45vh;
   margin: auto;
-  background-color: #be003c;
+  background-color: #fe0000;
   color: #f5d324;
   box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
 }
@@ -202,7 +202,7 @@ input[type=submit] {
 .userdetailsholder {
   padding: 5px;
   background-color: #f5d324;
-  color: #be003c;
+  color: #fe0000;
   width: 40vh;
   margin: auto;
   margin-bottom: 10px ;

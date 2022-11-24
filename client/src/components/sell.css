@@ -12,7 +12,7 @@
     margin: auto;
     padding: 20px;
     color: #f5d324;
-    background-color: #be003c;
+    background-color: #fe0000;
     box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .sellform button:hover {
-    color: #be003c;
+    color: #fe0000;
     background-color: #f5d324;
 }
 

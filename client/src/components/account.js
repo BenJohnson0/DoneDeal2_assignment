@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./account.css";
 import PictureUploader from "./fileUploader";
+import RecordList from "./recordList";
 
 
 class UserAccess extends React.Component {
@@ -66,11 +67,11 @@ updateUserState = (uname, pass) => {
         <div id = "personaldetails">
           <h2>Your Details</h2>
 
-          <p>Your name</p>
+          <p></p>
 
           <p class = "userdetailsholder">Username</p>
 
-          <p>Your Email</p>
+          <p></p>
 
           <p class = "userdetailsholder">Email</p>
           
@@ -79,18 +80,9 @@ updateUserState = (uname, pass) => {
         <div id = "passwordsec">
           <h2>Your Password and security</h2>
 
-          <h3>Change your password</h3>
+          <RecordList />
 
-          <form action = "">
-            <div class = "changepasswordcontainer">
-
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="8" required></input> <br></br>
-
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" minlength="8" required></input><br></br>
-
-            <button type="submit" class="confirmbtn">Confirm</button>
-            </div>
-          </form>
+          
 
         </div>
 
@@ -98,6 +90,7 @@ updateUserState = (uname, pass) => {
             <h2>Your Favourite Ads</h2>
 
             <p>The ads you favourite will appear here.</p>
+          
         </div>
         
         <div id = "logout">
@@ -167,3 +160,15 @@ const Account = () => {
   };
     
 export default Account;
+
+/*
+<form action = "">
+            <div class = "changepasswordcontainer">
+
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="8" required></input> <br></br>
+
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" minlength="8" required></input><br></br>
+
+            <button type="submit" class="confirmbtn">Confirm</button>
+            </div>
+          </form>*/

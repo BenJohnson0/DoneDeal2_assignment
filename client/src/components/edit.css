@@ -1,0 +1,45 @@
+.updatedivcontainer {
+    width: 80vh;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+}
+
+.updatedivcontainer label {
+    padding: 20px;
+}
+
+
+.updateform-group input[type="submit"] {
+    color: black;
+    width: 20vh;
+    margin: 15px auto;
+    background-color: #f5d324;
+    border: #f5d324;
+}
+
+
+.updateform-group input[type="submit"]:hover {
+    color: #f5d324;
+    background-color: #fe0000;
+    
+}
+
+.updateform-control {
+    border-radius: 20px;
+}
+
+.updateform-group input[type="email"],input[type="text"],input[type="password"] {	
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.updateform-group {
+    border: 2px solid #f5d324;
+    box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+    max-width: 80vh;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
