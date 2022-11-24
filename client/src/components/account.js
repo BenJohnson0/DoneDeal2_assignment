@@ -75,10 +75,9 @@ updateUserState = (uname, pass) => {
           
         </div>
         
-        <div class = "accounteditdiv" id = "logout">
-          <h2>Log out</h2>
-          <h4>Are you sure you wish to log out?</h4>
-          <button class = "logoutbutton" onClick={this.updateUserState}>Yes, log me out</button>
+        <div id = "logout">
+          <h2>Come back soon!</h2>
+          <button class = "logoutbutton" onClick={this.updateUserState}>Log out</button>
         </div>
 
       </div>) 
