@@ -39,6 +39,7 @@
 #profilepicture {
     display: none;
     text-align: center;
+    width: 80vh;
 }
 
 #profilepicture a {
@@ -61,16 +62,20 @@
 #passwordsec {
     display: none;
     text-align: center;
+    width: 80vh;
+  
 }
 
 #favouritescontainer {
   display: none;
   text-align: center;
+  width: 80vh;
 }
 
 #logout {
     display: none;
     text-align: center;
+    width: 80vh;
 }
 
 #logout h2 {
@@ -84,6 +89,11 @@
     box-shadow: 2.5px 2.5px;
 }
 
+#logout button:hover { 
+  color: #be003c;
+  background-color: #f5d324;
+}
+
 .logoutbutton:hover {
   opacity:1;
   color: black;
@@ -94,8 +104,9 @@
 /* Add padding to containers */
 .changepasswordcontainer {
   padding: 8px;
-  margin: auto;
-  max-width: 500px;
+  margin: 20px auto;
+  max-width: 600px;
+  margin-left: 20px;
 }
 
 b {
@@ -175,4 +186,15 @@ input[type=submit] {
 
 .input-container label {
   padding: 10px;
+}
+
+
+
+.userdetailsholder {
+  padding: 5px;
+  background-color: #f5d324;
+  color: #be003c;
+  width: 40vh;
+  margin: auto;
+  margin-bottom: 10px ;
 }

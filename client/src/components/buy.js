@@ -6,6 +6,16 @@ export const Buy = () => {
   return (
     <div id = "carcontainer" classname = "carContainer">
         <h2>Cars for sale</h2>
+
+        <h3>Search for a car</h3>
+
+        <div className="searchbar">
+          <form action="#">
+            <input type="text" placeholder="Search.."></input>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
         {carData.map((data, key) => {
           return ( 
             <div key={key}>

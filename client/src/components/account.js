@@ -67,6 +67,12 @@ updateUserState = (uname, pass) => {
           <h2>Your Details</h2>
 
           <p>Your name</p>
+
+          <p class = "userdetailsholder">Username</p>
+
+          <p>Your Email</p>
+
+          <p class = "userdetailsholder">Email</p>
         </div>
 
         <div id = "passwordsec">
@@ -89,6 +95,8 @@ updateUserState = (uname, pass) => {
 
         <div id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
+
+            <p>The ads you favourite will appear here.</p>
         </div>
         
         <div id = "logout">
