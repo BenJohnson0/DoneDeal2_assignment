@@ -15,7 +15,7 @@ Upon cloning the repo,
 - cd into the client directory and run "npm install"
 - cd into server again, and run "node server"
 - cd into client, and run "npm start"
-- View the website on localhost/3000
+- View the website on localhost:3000
 
 All user details are stored in the MongoDB collection, so this must be running before the app is started. 
 
