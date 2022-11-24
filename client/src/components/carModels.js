@@ -69,7 +69,7 @@ export const carData = [
       "Reg":"201-WW-49732",
       "Colour":"Blue",
       "Price":"€7,000",
-      "Image":"aclass.jpeg"
+      "Image":"aclass.jpg"
   },
 {
   "name":"Ford Mustang",

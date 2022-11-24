@@ -41,28 +41,26 @@ export const Buy = () => {
           type="text"
           value={searchString}
           onChange={(e) => setSearchString(e.target.value)}
-          placeholder="search here.."
+          placeholder="Search here..."
         />
       </p>
+      
       <pre>
-        {JSON.stringify(searchedArray, null, '    ')}
-      </pre>
-        </div>
+      {JSON.stringify(searchedArray, null, '    ')}
 
-        {carData.map((data, key) => {
-          return ( 
-            <div key={key}>
+        {carData.map((searchedArray) => (
+            <div>
                 <Carad
-                key={key}
-                name = {data.name} 
-                Engine = {data.Engine}                 
-                Reg = {data.Reg} 
-                Colour = {data.Colour}
-                Price = {data.Price}
-                Image = {data.Image} />
+                name = {searchedArray.name} 
+                Engine = {searchedArray.Engine}                 
+                Reg = {searchedArray.Reg} 
+                Colour = {searchedArray.Colour}
+                Price = {searchedArray.Price}
+                Image = {searchedArray.Image} />
             </div>
-          );
-        })}
+        ))}
+      </pre>
+      </div>
       </div>
   );
 };
@@ -72,7 +70,6 @@ export default Buy;
 const Carad = ({ name, Engine, Reg, Colour, Price, Image }) => {
     if (!name) return <div />;
     return (
-    
     <div class = "ad">
         <img src = {Image} alt=''></img>
         <h4> {name}</h4>
