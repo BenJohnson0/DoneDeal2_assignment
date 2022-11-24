@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { carData } from "./carModels";
-import SearchUser from "./searchUser";
 import "./buy.css";
-
-
-
 
 export const Buy = () => {
 
@@ -47,9 +43,7 @@ export const Buy = () => {
       </p>
       
       <pre>
-      {JSON.stringify(searchedArray, null, '    ')}
-
-        {carData.map((searchedArray) => (
+      {searchedArray.map( (searchedArray) => (
                 <Carad
                 name = {searchedArray.name} 
                 Engine = {searchedArray.Engine}                 
