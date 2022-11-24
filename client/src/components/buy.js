@@ -30,7 +30,7 @@ export const Buy = () => {
     <div id = "carcontainer" classname = "carContainer">
 
         <h2>Cars for sale</h2>
-        <h3>Search for a car</h3>
+        <h3>Search by name</h3>
 
         <div className="searchbar">
         <p>
