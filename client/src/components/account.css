@@ -1,8 +1,9 @@
 .accountedit {
-    background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
+    background-color: #be003c;
+    color: #f5d324;
     height: 500px;
     max-width: 1000px;
-    border: 2px solid black;
+    border: 2px solid rgb(243, 3, 3);
     margin: 60px auto;
     display: grid;
     grid-template-columns: 200px 800px;
@@ -14,9 +15,8 @@
 }
 
 .vertical-menu button {
-  background-color: transparent;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  background-color: #f5d324;
+  
   color: black; 
   display: block; 
   padding: 20px; 
@@ -26,7 +26,7 @@
 }
 
 .vertical-menu button:hover {
-  background-color: #4090b8;
+  background-color: #be003c;
 }
 
 .vertical-menu button.active {
@@ -51,7 +51,7 @@
 
 #personaldetails {
     display: block;
-    background: linear-gradient(to top, #587cc4, rgb(81, 180, 241));
+    background-color: #be003c;
     text-align: center;
     width: 80vh;
 
@@ -166,7 +166,9 @@ input[type=submit] {
   width: 60vh;
   height: 45vh;
   margin: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #be003c;
+  color: #f5d324;
+  box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
 }
 
 

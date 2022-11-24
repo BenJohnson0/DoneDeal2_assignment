@@ -1,6 +1,6 @@
 
 .navbar {
-    background: #000000;
+    background: #be003c;
 }
 .navbar h1 {
     color: #f5d324;
@@ -10,7 +10,7 @@
 }
 
 b {
-    color: #be003c;
+    color: #000000;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -26,7 +26,11 @@ li {
 
 .nav-link {
     font-size: 22px;
-    color: #be003c;
+    color: #f5d324;
+}
+
+.nav-link:active {
+    color: #f5d324;
 }
 
 .nav-link:hover {
@@ -36,7 +40,7 @@ li {
 
 
 #accounticon {
-    color: #be003c;
+    color: #f5d324;
     font-size: 30px;
 }
 
