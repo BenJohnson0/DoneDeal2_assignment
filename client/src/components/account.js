@@ -11,6 +11,18 @@ class UserAccess extends React.Component {
       }
   }
 
+  /*
+  verifyUser = (name, pwd, userObj) => {
+    if ( (name = userObj.name) && (pwd = userObj.password) ) {
+      this.setState((state) => {
+        return {
+            isLoggedIn: !state.isLoggedIn,
+        };
+      });
+    }
+  }
+  */
+  
   updateUserState = () => {
     this.setState((state) => {
       return {
@@ -18,31 +30,6 @@ class UserAccess extends React.Component {
       };
   });
 }
-
-/*
-updateUserState = (uname, pass) => {
-
-  const [user, setUser] = useState([]);
-
-    const fetchData = () => {
-    return fetch("http://localhost:5000/record/")
-          .then((response) => response.json())
-          .then((data) => setUser(data));
-  }
-
-    useEffect(() => {
-      fetchData();
-    },[])
-
-    if ( (user.name = uname) && (user.password = pass) ) {
-      this.setState((state) => {
-        return {
-            isLoggedIn: !state.isLoggedIn,
-        };
-    });
-  }
-}
-*/
     
   render() {
       return (
@@ -116,14 +103,14 @@ updateUserState = (uname, pass) => {
                   <div className="input-container">
                     <label>Username </label>
                     <input type="text" 
-                           name="uname" 
+                           name="name" 
                            required />
                   </div>
                   <div className="input-container">
                     <label>Password </label>
                     <input type="password"
-                     minlength="8" 
-                     name="pass"
+                     minlength="6" 
+                     name="pwd"
                      required />
                   </div>
 
@@ -140,9 +127,27 @@ updateUserState = (uname, pass) => {
 
 const Account = () => {
 
+    const [user, setUser] = useState([]);
+  
+      const fetchData = () => {
+      return fetch("http://localhost:5000/record/")
+            .then((response) => response.json())
+            .then((data) => setUser(data));
+    }
+  
+      useEffect(() => {
+        fetchData();
+      },[])
+
     return (
       <div>
         <UserAccess />
+        <h4>User List</h4>
+        <ul>
+        {user && user.length > 0 && user.map((userObj, index) => (
+            <li key={userObj.id}>{userObj.name}</li>
+          ))}
+        </ul>
       </div>
       );
       
