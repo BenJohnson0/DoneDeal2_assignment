@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -86,5 +88,27 @@
       document.getElementById('logout').style.display = "block"; 
       document.getElementById('favouritescontainer').style.display = "none";
     }
+    import { carData } from "./carModels";
+
+    
+    let data = carData;
+
+    function search_cars() {
+      let input = document.getElementById('searchbar').value
+      input = input.toLowerCase();
+      let x = document.querySelector('#carcontainer');
+      x.innerHTML = ""
+
+      for (i = 0; i < data.length; i++) {
+        let obj = carData[i];
+
+        if (obj.Name.toLowerCase().includes(input)) {
+          const elem = document.createElement("#ad")
+          elem.innerHTML = `${obj.Name} - ${obj.Color}`
+          x.appendChild(elem)
+        }
+      }
+    }
+
   </script>
 </html>

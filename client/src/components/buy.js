@@ -3,6 +3,9 @@ import { carData } from "./carModels";
 import SearchUser from "./searchUser";
 import "./buy.css";
 
+
+
+
 export const Buy = () => {
 
   const [searchedArray, setSearchedArray] = React.useState(carData);
@@ -26,16 +29,19 @@ export const Buy = () => {
   }, [searchString])
 
   return (
+
     <div id = "carcontainer" classname = "carContainer">
+
         <h2>Cars for sale</h2>
         <h3>Search for a car</h3>
 
         <div className="searchbar">
-        <p><input
+        <p>
+        <input
           type="text"
           value={searchString}
           onChange={(e) => setSearchString(e.target.value)}
-          placeholder="Search here.."
+          placeholder="search here.."
         />
       </p>
       <pre>
@@ -79,6 +85,5 @@ const Carad = ({ name, Engine, Reg, Colour, Price, Image }) => {
     
     );
 };
-
 
 
