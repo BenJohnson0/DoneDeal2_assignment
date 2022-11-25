@@ -3,6 +3,7 @@
     background: #fe0000;
     padding: 0px;
     margin-bottom: 0px;
+    font-family: Sans-serif;
 }
 
 .navbar h1 {
@@ -87,3 +88,13 @@ li {
     }
 }
 
+#title:hover,.nav-link:hover {
+        animation: rotate 1s;
+      }
+
+
+@keyframes rotate {
+    100% {
+    transform: rotate(360deg);
+      }
+}

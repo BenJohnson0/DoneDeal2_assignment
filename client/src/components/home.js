@@ -4,7 +4,7 @@ import './home.css';
 export const Home = () => {
   return (
     <div id = "main">
-    <h2>Done Deal 2</h2>
+    <h2>Homepage</h2>
     <div id = "homecontainer">
         
 
