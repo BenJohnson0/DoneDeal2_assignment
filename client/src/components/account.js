@@ -10,8 +10,27 @@ class UserAccess extends React.Component {
       this.state = {
           isLoggedIn: false,
       }
+      this.onInputchange = this.onInputchange.bind(this);
+      this.onSubmitForm = this.onSubmitForm.bind(this);
   }
 
+  onInputchange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
+
+  onSubmitForm() {
+    console.log(this.state)
+
+    this.setState((state) => {
+      return {
+          isLoggedIn: !state.isLoggedIn,
+      };
+  });
+}
+
+/*
   updateUserState = () => {
     this.setState((state) => {
       return {
@@ -19,6 +38,7 @@ class UserAccess extends React.Component {
       };
   });
 }
+*/
 
 /*
 updateUserState = (uname, pass) => {
@@ -46,6 +66,9 @@ updateUserState = (uname, pass) => {
 */
     
   render() {
+
+    const { items } = this.state;
+
       return (
 
           <div class = "accountmaindiv">
@@ -86,18 +109,22 @@ updateUserState = (uname, pass) => {
       
       (<div className="form">
         <h2>Log in to continue</h2>
-                <form onSubmit={this.updateUserState}>
+                <form onSubmit={this.onSubmitForm}>
                   <div className="input-container">
                     <label>Username </label>
                     <input type="text" 
-                           name="uname" 
+                           name="name" 
+                           value={this.state.name}
+                           onChange={this.onInputchange}
                            required />
                   </div>
                   <div className="input-container">
                     <label>Password </label>
                     <input type="password"
-                     minlength="8" 
-                     name="pass"
+                     minlength="6" 
+                     name="pwd"
+                     value={this.state.pwd}
+                     onChange={this.onInputchange}
                      required />
                   </div>
 
