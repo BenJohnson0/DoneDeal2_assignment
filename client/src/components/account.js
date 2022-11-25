@@ -30,7 +30,7 @@ class UserAccess extends React.Component {
   });
 }
 
-/*
+
   updateUserState = () => {
     this.setState((state) => {
       return {
@@ -38,7 +38,7 @@ class UserAccess extends React.Component {
       };
   });
 }
-*/
+
 
 /*
 updateUserState = (uname, pass) => {
