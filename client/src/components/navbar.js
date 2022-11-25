@@ -45,12 +45,7 @@ export default function Navbar() {
              </NavLink>
              </li>	
 
-            { /* REMOVE BEFORE DEMO */ }
-             <li className="nav-item" class="search-container">
-             <NavLink className="nav-link" to="/users">
-               USERS
-             </NavLink>
-             </li>
+             
 
              <li id = "account" className="nav-item">
              <NavLink className="nav-link" to="/account">
