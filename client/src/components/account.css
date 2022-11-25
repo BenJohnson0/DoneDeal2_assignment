@@ -62,35 +62,30 @@
 
 #logout {
     display: none;
+    text-align: center;
     
 }
 
 .accounteditdiv {
   text-align: center;
     width: 80vh;
-
 }
 
 #logout h2 {
-  margin-top: 15px;
+  margin-top: 10vh;
 }
 
 #logout button {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 20px;
-    margin: 5px;
+    margin: 20px 5px;
     box-shadow: 2.5px 2.5px;
 }
 
 #logout button:hover { 
-  color: #fe0000;
-  background-color: #f5d324;
-}
-
-.logoutbutton:hover {
-  opacity:1;
-  color: black;
-  background-color: white;
+  color: #f5d324;
+  background-color: #ffffff;
+  
 }
 
 
@@ -219,5 +214,10 @@ input[type=submit] {
 
   .accounteditdiv {
     width: 25vh;
+  }
+
+  .form {
+    width: 40vh;
+    height: 60vh;
   }
 }

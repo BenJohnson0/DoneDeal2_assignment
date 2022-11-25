@@ -6,50 +6,8 @@
 }
 
 @media screen and (max-width: 600px) { 
-    body {
-        width: 30vh;
-    }
+   #background {
+    width: 60vh;
+   }
 
-    
-
-    html {
-        width: 30vh;
-        background-color: rgb(238, 152, 40);
-    }
-}
-
-
-@media screen and (max-width: 800px) { 
-    body {
-        width: 50vh;
-    }
-
-    html {
-        width: 50vh;
-        background-color: rgb(40, 238, 60);
-    }
-}
-
-
-@media screen and (max-width: 1200px) { 
-    body {
-        width: 100vh;
-    }
-
-    html {
-        width: 65vh;
-        background-color: rgb(97, 21, 227);
-    }
-}
-
-
-@media screen and (max-width: 1400px) { 
-    body {
-        width: 150vh;
-    }
-
-    html {
-        width: 65vh;
-        background-color: rgb(97, 21, 227);
-    }
 }

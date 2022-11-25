@@ -38,4 +38,8 @@ iframe {
         display: block;
         width: 60vh;
     }
+
+    .contactusdiv {
+        width: 40vh;
+    }
 }

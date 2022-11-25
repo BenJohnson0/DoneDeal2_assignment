@@ -64,7 +64,7 @@ li {
 @media screen and (max-width: 600px) {
 
     .navbar {
-        width: 65vh;
+        width: 60vh;
     }
     
     .mobilenavitem .nav-link {

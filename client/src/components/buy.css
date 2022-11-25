@@ -68,7 +68,8 @@
   }
 
   .ad img {
-    width: 180px;
+    width: 40vh;
+    height: 40vh;
   }
 }
 

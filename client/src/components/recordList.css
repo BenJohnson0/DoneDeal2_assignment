@@ -1,9 +1,10 @@
 .users {
-  background-color : #fe0000;
-    color: #f5d324;
+  background-color : #ffffff;
+    color: #000000;
     max-width: 70vh;
     margin: 30px auto;
     padding: 20px;
+    text-align: center;
 }
 
 table {
@@ -13,13 +14,35 @@ table {
 
 
 th {
-    color: #f5d324;
+    color:rgb(0, 0, 0);
 }
 
-tr {
-    color: #f5d324;
+td {
+    color: rgb(0, 0, 0);
+}
+
+tr{
+    color: white;
 }
 
 .users a {
     text-decoration: none;
+}
+
+.btn.btn-link {
+    color: black;
+}
+
+.btn.btn-link:hover {
+    color: #f5d324;
+}
+
+#deletebutton {
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px 0px;
+    padding: 5px;
+}
+
+#deletebutton:hover {
+    color: #f5d324;
 }
