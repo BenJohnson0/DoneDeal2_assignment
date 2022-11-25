@@ -168,15 +168,3 @@ const Account = () => {
   };
     
 export default Account;
-
-/*
-<form action = "">
-            <div class = "changepasswordcontainer">
-
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="8" required></input> <br></br>
-
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" minlength="8" required></input><br></br>
-
-            <button type="submit" class="confirmbtn">Confirm</button>
-            </div>
-          </form>*/
