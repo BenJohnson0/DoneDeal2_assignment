@@ -88,8 +88,6 @@
   
 }
 
-
-/* Add padding to containers */
 .changepasswordcontainer {
   padding: 8px;
   margin: 20px auto;
@@ -108,7 +106,6 @@ label {
     font-size: 20px;
 }
 
-/* Full-width input fields */
 input[type=password],input[type=text] {
   width: 25vh;
   height: 5vh;
@@ -172,7 +169,7 @@ input[type=submit] {
   text-align: center;
   width: 60vh;
   height: 45vh;
-  margin: auto;
+  margin: 80px auto;
   background-color: #fe0000;
   color: #f5d324;
   box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
@@ -200,20 +197,20 @@ input[type=submit] {
   }
 
   .accountedit {
-    width: 60vh;
-    grid-template-columns: 15vh 25vh;
+    width: 50vh;
+    grid-template-columns: 12vh 30vh;
   }
 
   .vertical-menu {
     width: 15vh;
   }
   .verticalmenubutton {
-    width: 15vh;
+    width: 12vh;
     margin-right: 0px;
   }
 
   .accounteditdiv {
-    width: 25vh;
+    width: 30vh;
   }
 
   .form {

@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import "./app.css";
  
 import Navbar from "./components/navbar";
+import Login from "./components/login";
 import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/sell" element={<Sell />} />
         <Route path="/account" element={<Account />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div> 

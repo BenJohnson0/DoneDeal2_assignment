@@ -30,6 +30,8 @@ export default function Edit() {
        return;
      }
  
+     
+    window.alert(`id = ${id}`);
      setForm(record);
    }
  
@@ -52,6 +54,7 @@ export default function Edit() {
      email: form.email,
      password: form.password,
    };
+
  
    await fetch(`http://localhost:5000/update/${params.id}`, {
      method: "POST",

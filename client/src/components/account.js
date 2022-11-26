@@ -30,17 +30,17 @@ class UserAccess extends React.Component {
   });
 }
 
-
-  updateUserState = () => {
+/*
+updateUserState = () => {
     this.setState((state) => {
       return {
           isLoggedIn: !state.isLoggedIn,
       };
   });
 }
+*/
 
 
-/*
 updateUserState = (uname, pass) => {
 
   const [user, setUser] = useState([]);
@@ -55,7 +55,7 @@ updateUserState = (uname, pass) => {
       fetchData();
     },[])
 
-    if ( (user.name = uname) && (user.password = pass) ) {
+    if ( (user.name == uname) && (user.password == pass) ) {
       this.setState((state) => {
         return {
             isLoggedIn: !state.isLoggedIn,
@@ -63,7 +63,7 @@ updateUserState = (uname, pass) => {
     });
   }
 }
-*/
+
     
   render() {
 
@@ -130,7 +130,7 @@ updateUserState = (uname, pass) => {
 
                   <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
                   <div className="button-container">
-                    <input type="submit"></input>
+                    <input type="submit" to={`/login`}></input>
                   </div>
                 </form>
               </div>) }
