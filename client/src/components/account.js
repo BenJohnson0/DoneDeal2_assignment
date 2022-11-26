@@ -39,32 +39,6 @@ class UserAccess extends React.Component {
       };
   });
 }
-
-
-/*
-updateUserState = (uname, pass) => {
-
-  const [user, setUser] = useState([]);
-
-    const fetchData = () => {
-    return fetch("http://localhost:5000/record/")
-          .then((response) => response.json())
-          .then((data) => setUser(data));
-  }
-
-    useEffect(() => {
-      fetchData();
-    },[])
-
-    if ( (user.name = uname) && (user.password = pass) ) {
-      this.setState((state) => {
-        return {
-            isLoggedIn: !state.isLoggedIn,
-        };
-    });
-  }
-}
-*/
     
   render() {
 
@@ -94,7 +68,6 @@ updateUserState = (uname, pass) => {
 
         <div class = "accounteditdiv" id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
-
             <p>The ads you favourite will appear here.</p>
           
         </div>
@@ -169,15 +142,3 @@ const Account = () => {
   };
     
 export default Account;
-
-/*
-<form action = "">
-            <div class = "changepasswordcontainer">
-
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="8" required></input> <br></br>
-
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" minlength="8" required></input><br></br>
-
-            <button type="submit" class="confirmbtn">Confirm</button>
-            </div>
-          </form>*/
