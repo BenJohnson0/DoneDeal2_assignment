@@ -44,3 +44,17 @@
 
     
 }
+
+.ad {
+    border: 2px solid black;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 60vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #c8d419;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color : #fe0000;
+    box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
+  }

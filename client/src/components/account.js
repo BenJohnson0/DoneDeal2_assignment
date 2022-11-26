@@ -21,13 +21,14 @@ class UserAccess extends React.Component {
   }
 
   onSubmitForm() {
-    console.log(this.state)
 
     this.setState((state) => {
       return {
           isLoggedIn: !state.isLoggedIn,
       };
   });
+  
+    console.log(this.state) 
 }
 
 /*
@@ -93,7 +94,6 @@ updateUserState = (uname, pass) => {
 
         <div class = "accounteditdiv" id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
-
             <p>The ads you favourite will appear here.</p>
           
         </div>
