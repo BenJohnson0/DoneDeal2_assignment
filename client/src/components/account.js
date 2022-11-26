@@ -21,13 +21,14 @@ class UserAccess extends React.Component {
   }
 
   onSubmitForm() {
-    console.log(this.state)
 
     this.setState((state) => {
       return {
           isLoggedIn: !state.isLoggedIn,
       };
   });
+  
+    console.log(this.state) 
 }
 
 
@@ -179,4 +180,5 @@ export default Account;
 
             <button type="submit" class="confirmbtn">Confirm</button>
             </div>
-          </form>*/
+          </form>
+*/
