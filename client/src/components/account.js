@@ -76,14 +76,8 @@ updateUserState = () => {
           <button class = "logoutbutton" onClick={this.updateUserState}>Log out</button>
         </div>
 
-      </div>) 
-      
-      || 
-      
-      (<div className="form">
-        
-              </div>) }
-          </div>
+      </div>) }
+    </div>
       );
   }
 }
