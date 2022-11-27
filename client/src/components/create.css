@@ -67,3 +67,10 @@ input[type=password],input[type=text], input[type=email]{
     padding: 20px;
     width: 25vh;
 }
+
+
+@media screen and (max-width: 800px) { 
+    .container {
+        width: 40vh;
+    }
+}
