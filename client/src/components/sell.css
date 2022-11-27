@@ -58,3 +58,7 @@
     background-color : #fe0000;
     box-shadow: 0 4px 8px 0 #f5d324, 0 6px 20px 0 #f5d324;
   }
+
+#list li {
+    color: #f5d324;
+}

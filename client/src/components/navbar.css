@@ -62,10 +62,10 @@ li {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
     .navbar {
-        width: 60vh;
+        width: auto;
     }
     
     .mobilenavitem .nav-link {
@@ -73,7 +73,6 @@ li {
         color: #f5d324;
         margin-top: 0px;
         padding-top: 0px;
-        display: block;
     }
 
     .mobilenavitem {
@@ -88,8 +87,8 @@ li {
     }
 }
 
-@media scren and (max-width: 1800px)  {
-    .mobilenavitem .nav-link {
+@media scren and (max-width: 1000px)  {
+    .mobilenavitem {
         display: block;
 
     }
