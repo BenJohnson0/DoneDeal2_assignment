@@ -30,8 +30,6 @@ export default function Edit() {
        return;
      }
  
-     
-     window.alert(`id = ${id}`);
      setForm(record);
    }
  
