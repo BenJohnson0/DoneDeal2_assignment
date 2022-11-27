@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import "./account.css";
- 
+
 export default function Login() {
+
  const [form, setform] = useState({
    name: "",
    password: "",
@@ -15,7 +16,7 @@ export default function Login() {
       return { ...prev, ...value };
     });
   }
- 
+
     async function onSubmit(e) { 
         
         setform({ name: "",password: "" });
@@ -26,34 +27,60 @@ export default function Login() {
 
         const response = await fetch(`http://localhost:5000/record/${id}`);
         
-    
+        //if there is an error with the response
         if (!response.ok) {
           const message = `An error has occurred: ${response.statusText}`;
           window.alert(message);
           return;
         }
     
+        //REMOVE BEFORE DEMO
         const record = await response.json();
         window.alert(`Record is ${record.name} and ${record.password}`);
 
+        //if record isnt found
         if (!record) {
           window.alert(`Record with username ${name} not found`);
-          navigate("/Login");
+          navigate("/login");
           return;
         }
 
-        if (password !== record.password) {
-           window.alert(`Incorrect password`);
-           navigate("/Login");
+        //incorrect details
+        if ((password !== record.password) && (name !== record.name)) {
+           window.alert(`Invalid details, try again.`);
+           navigate("/login");
            return;
         }
-        
-        
-        
-        navigate("/Account");
-        
-    
-     }  
+
+        //wrong name
+        if ((password === record.password) && (name !== record.name)) {
+          window.alert(`Incorrect name, try again.`);
+          navigate("/login");
+          return;
+       }
+
+        //wrong password
+        if ((password !== record.password) && (name === record.name)) {
+         window.alert(`Incorrect password, try again.`);
+         navigate("/login");
+         return;
+       }
+
+     //correct details
+      if ((password === record.password) && (name === record.name)) {
+        window.alert(`Login successful.`);
+        navigate("/account");
+
+        this.setState((state) => {
+          return {
+              isLoggedIn: !state.isLoggedIn,
+          };
+      });
+
+        navigate("/account");
+        return;
+    }    
+  }  
  
  return (
     <div className="form">

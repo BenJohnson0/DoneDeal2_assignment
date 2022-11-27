@@ -7,6 +7,7 @@ export const Buy = () => {
   const [searchedArray, setSearchedArray] = React.useState(carData);
   const [searchString, setSearchString] = useState("");
 
+  //change the output given the current search query
   React.useEffect(() => {
     if(searchString.length === 0){
       setSearchedArray(carData)
@@ -26,7 +27,6 @@ export const Buy = () => {
   }, [searchString])
 
   return (
-
     <div id = "carcontainer" classname = "carContainer">
 
         <h2>Cars for sale</h2>
@@ -40,7 +40,7 @@ export const Buy = () => {
           onChange={(e) => setSearchString(e.target.value)}
           placeholder="Search here..."
         />
-      </p>
+        </p>
       
       <pre>
       {searchedArray.map( (searchedArray) => (

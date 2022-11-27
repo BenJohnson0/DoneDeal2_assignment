@@ -34,10 +34,10 @@ export const Home = () => {
             <img src="signup.jpg" alt=""></img>
             <h2>Sign up</h2>
             <p>Create your account today to: </p>
-
-            Favourite your favourite ads <br></br>
-            Place an Ad <br></br>
-            Enquire about an Ad              
+            
+            - Favourite your favourite ads <br></br>
+            - Place an Ad <br></br>
+            - Enquire about an Ad              
         </div>
       </div>
       </div>

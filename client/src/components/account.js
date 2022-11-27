@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./account.css";
 import PictureUploader from "./fileUploader";
 import RecordList from "./recordList";
 
-
+//UserAccess class for profile management
 class UserAccess extends React.Component {
   constructor(props) { 
       super(props);
@@ -21,66 +21,36 @@ class UserAccess extends React.Component {
   }
 
   onSubmitForm() {
-
-    this.setState((state) => {
-      return {
-          isLoggedIn: !state.isLoggedIn,
-      };
-  });
-  
-    console.log(this.state) 
-}
-
-/*
-updateUserState = () => {
     this.setState((state) => {
       return {
           isLoggedIn: !state.isLoggedIn,
       };
   });
 }
-*/
 
-
-updateUserState = (uname, pass) => {
-
-  const [user, setUser] = useState([]);
-
-    const fetchData = () => {
-    return fetch("http://localhost:5000/record/")
-          .then((response) => response.json())
-          .then((data) => setUser(data));
-  }
-
-    useEffect(() => {
-      fetchData();
-    },[])
-
-    if ( (user.name == uname) && (user.password == pass) ) {
+  updateUserState = () => {
       this.setState((state) => {
         return {
             isLoggedIn: !state.isLoggedIn,
         };
     });
   }
-}
-
     
   render() {
-
-    const { items } = this.state;
-
       return (
-
           <div class = "accountmaindiv">
-              <div><p>Login state: { this.state.isLoggedIn.toString() }</p> </div>
+              <div>
+                <p>Login state: { this.state.isLoggedIn.toString() }</p>
+                <button onClick={this.updateUserState}>View Profile</button>
+              </div>
+              
               { (this.state.isLoggedIn &&  <div class = "accountedit">
-        <div class="vertical-menu">
-            <button class = "verticalmenubutton" onClick={window['displayprofilefavourites']}>Favourite Ads</button>
-            <button class = "verticalmenubutton" onClick={window['displayprofilepic']}>Profile Picture</button>
-            <button class = "verticalmenubutton" onClick={window['displayprofiledetails']}>Personal Details</button>
-            <button class = "verticalmenubutton" onClick={window['displayprofilelogout']}>Log out</button>
-        </div>
+              <div class="vertical-menu">
+                <button class = "verticalmenubutton" onClick={window['displayprofilefavourites']}>Favourite Ads</button>
+                <button class = "verticalmenubutton" onClick={window['displayprofilepic']}>Profile Picture</button>
+                <button class = "verticalmenubutton" onClick={window['displayprofiledetails']}>Personal Details</button>
+                <button class = "verticalmenubutton" onClick={window['displayprofilelogout']}>Log out</button>
+              </div>
 
         <div class = "accounteditdiv" id = "profilepicture">
           <h2>Your Profile Picture</h2>
@@ -89,13 +59,11 @@ updateUserState = (uname, pass) => {
 
         <div class = "accounteditdiv" id = "personaldetails">
           <RecordList />
-          
         </div>
 
         <div class = "accounteditdiv" id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
             <p>The ads you favourite will appear here.</p>
-          
         </div>
         
         <div id = "logout">
@@ -103,65 +71,17 @@ updateUserState = (uname, pass) => {
           <button class = "logoutbutton" onClick={this.updateUserState}>Log out</button>
         </div>
 
-      </div>) 
-      
-      || 
-      
-      (<div className="form">
-        <h2>Log in to continue</h2>
-                <form onSubmit={this.onSubmitForm}>
-                  <div className="input-container">
-                    <label>Username </label>
-                    <input type="text" 
-                           name="name" 
-                           value={this.state.name}
-                           onChange={this.onInputchange}
-                           required />
-                  </div>
-                  <div className="input-container">
-                    <label>Password </label>
-                    <input type="password"
-                     minlength="6" 
-                     name="pwd"
-                     value={this.state.pwd}
-                     onChange={this.onInputchange}
-                     required />
-                  </div>
-
-                  <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
-                  <div className="button-container">
-                    <input type="submit" to={`/login`}></input>
-                  </div>
-                </form>
-              </div>) }
-          </div>
-      );
+      </div>)}
+    </div>
+    );
   }
 }
 
 const Account = () => {
 
-  const [user, setUser] = useState([]);
-
-    const fetchData = () => {
-    return fetch("http://localhost:5000/record/")
-          .then((response) => response.json())
-          .then((data) => setUser(data));
-  }
-
-    useEffect(() => {
-      fetchData();
-    },[])
-
   return (
     <div>
       <UserAccess />
-      <h4>User List</h4>
-      <ul>
-      {user && user.length > 0 && user.map((userObj, index) => (
-          <li key={userObj.id}>{userObj.name}</li>
-        ))}
-      </ul>
     </div>
     );
     

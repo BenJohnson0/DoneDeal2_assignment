@@ -12,13 +12,15 @@ export default function Help() {
                     <p>Contact us by emailing us at benjohnson@tud.ie, carltallon@tud.ie</p>
 
                     <h3>This project's source code</h3>
-                    <p>Find it on our <a href="https://github.com/carltallon">github</a> pages</p>
+                    <p>Find it on our <a href="https://github.com/carltallon">github</a> pages.</p>
                 </div>
 
                 <div className="contactusdiv">
                     <h3>The Technology used </h3>
 
-                    <p>We used ReactJS, MongoDB and Bootstrap CSS to build this webpage</p>
+                    <p>We used ReactJS, MongoDB and Bootstrap CSS to build this webpage.
+                    Users are stored in an API and the car models are pulled from a local JSON
+                    file. We used Express and NodeJS to connect the frontend to the backend.  </p>
                 </div>
 
                 <div className="contactusdiv">
@@ -33,10 +35,10 @@ export default function Help() {
                     <h3>Frequently asked Questions</h3>
 
                     <h5>Who are we?</h5>
-                    <p>We are college students currently studying Computer Science (Infrastructure) in TUD</p>
+                    <p>We are current 3rd year college students, studying Computer Science (Infrastructure) in Technological University Dublin.</p>
 
                     <h5>What is this website?</h5>
-                    <p>This is our third year Web Development Project, based on a replication of popular Irish car marketplace donedeal.ie</p>
+                    <p>This is our third year Web Development and Deployment Project, based on a replication of popular Irish car marketplace donedeal.ie</p>
                 </div>
 
     
