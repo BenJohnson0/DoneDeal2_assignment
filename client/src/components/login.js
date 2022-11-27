@@ -16,12 +16,16 @@ export default function Login() {
     });
   }
  
-    async function loginattempt(e) {   
+    async function onSubmit(e) { 
+        
+        setform({ name: "",password: "" });
+
         const name = form.name;
-        const password = form.pwd;
+        const password = form.password;
         const id = "637c9fee04a794aec1586adf";
 
         const response = await fetch(`http://localhost:5000/record/${id}`);
+        
     
         if (!response.ok) {
           const message = `An error has occurred: ${response.statusText}`;
@@ -30,20 +34,23 @@ export default function Login() {
         }
     
         const record = await response.json();
+        window.alert(`Record is ${record.name} and ${record.password}`);
+
         if (!record) {
           window.alert(`Record with username ${name} not found`);
           navigate("/Login");
           return;
         }
+
         if (password !== record.password) {
            window.alert(`Incorrect password`);
            navigate("/Login");
            return;
         }
         
-        setform({ name: "",password: "" });
         
-        navigate("/Buy");
+        
+        navigate("/Account");
         
     
      }  
@@ -65,14 +72,14 @@ export default function Login() {
                 <input type="password"
                  minlength="6" 
                  name="pwd"
-                 value={form.pwd}
+                 value={form.password}
                  onChange={(e) => updateForm({ password: e.target.value })}
                  required />
               </div>
 
               <p>Don't have an account? Sign up <a href = "/create">here</a></p>
               <div className="button-container">
-                <input type="submit" onClick={loginattempt}></input>
+                <input type="submit" onClick={onSubmit}></input>
               </div>
             </form>
           </div>
