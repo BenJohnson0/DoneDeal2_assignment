@@ -39,6 +39,10 @@ iframe {
         width: 60vh;
     }
 
+    iframe {
+        width: 30vh;
+    }
+
     .contactusdiv {
         width: 40vh;
     }
