@@ -71,7 +71,7 @@ export default function Login() {
                 <label>Password </label>
                 <input type="password"
                  minlength="6" 
-                 name="pwd"
+                 name="password"
                  value={form.password}
                  onChange={(e) => updateForm({ password: e.target.value })}
                  required />
@@ -85,4 +85,3 @@ export default function Login() {
           </div>
  );
 }
-

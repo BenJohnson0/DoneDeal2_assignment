@@ -21,17 +21,16 @@ class UserAccess extends React.Component {
   }
 
   onSubmitForm() {
+    console.log(this.state)
 
     this.setState((state) => {
       return {
           isLoggedIn: !state.isLoggedIn,
       };
   });
-  
-    console.log(this.state) 
 }
 
-/*
+
 updateUserState = () => {
     this.setState((state) => {
       return {
@@ -39,31 +38,8 @@ updateUserState = () => {
       };
   });
 }
-*/
 
 
-updateUserState = (uname, pass) => {
-
-  const [user, setUser] = useState([]);
-
-    const fetchData = () => {
-    return fetch("http://localhost:5000/record/")
-          .then((response) => response.json())
-          .then((data) => setUser(data));
-  }
-
-    useEffect(() => {
-      fetchData();
-    },[])
-
-    if ( (user.name == uname) && (user.password == pass) ) {
-      this.setState((state) => {
-        return {
-            isLoggedIn: !state.isLoggedIn,
-        };
-    });
-  }
-}
 
     
   render() {
@@ -94,6 +70,7 @@ updateUserState = (uname, pass) => {
 
         <div class = "accounteditdiv" id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
+
             <p>The ads you favourite will appear here.</p>
           
         </div>
@@ -130,7 +107,7 @@ updateUserState = (uname, pass) => {
 
                   <p>Don't have an account? Sign up <a href = "/create  ">here</a></p>
                   <div className="button-container">
-                    <input type="submit" to={`/login`}></input>
+                    <input type="submit"></input>
                   </div>
                 </form>
               </div>) }
