@@ -3,7 +3,7 @@ import "./account.css";
 import PictureUploader from "./fileUploader";
 import RecordList from "./recordList";
 
-//UserAccess class for profile management
+//UserAccess class for profile managemen
 class UserAccess extends React.Component {
   constructor(props) { 
       super(props);

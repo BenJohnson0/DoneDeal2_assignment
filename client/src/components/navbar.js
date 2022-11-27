@@ -45,16 +45,8 @@ export default function Navbar() {
              </NavLink>
              </li>	
 
-             <li className="nav-item">
-             <NavLink className="nav-link" to="/login">
-               login
-             </NavLink>
-             </li>	
-
-             
-
              <li id = "account" className="nav-item">
-             <NavLink className="nav-link" to="/account">
+             <NavLink className="nav-link" to="/login">
                   <i id = "accounticon" class="fa fa-user"></i>
              </NavLink>
              </li>

@@ -34,7 +34,7 @@ class Footer extends Component {
           </li>
 
           <li className="nav-item">
-             <NavLink className="nav-link" to="/account">
+             <NavLink className="nav-link" to="/login">
                Account
              </NavLink>
           </li>

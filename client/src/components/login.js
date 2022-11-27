@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import "./account.css";
 
+//name: admin, password: password
 export default function Login() {
 
  const [form, setform] = useState({
@@ -33,10 +34,8 @@ export default function Login() {
           window.alert(message);
           return;
         }
-    
-        //REMOVE BEFORE DEMO
+
         const record = await response.json();
-        window.alert(`Record is ${record.name} and ${record.password}`);
 
         //if record isnt found
         if (!record) {
