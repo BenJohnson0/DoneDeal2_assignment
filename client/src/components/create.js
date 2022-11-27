@@ -85,8 +85,9 @@ export default function Create() {
            className="btn btn-primary"
          />
        </div>
-       <p>Already have an account? Sign in <a href = "/account">here</a></p>
+       
      </form>
+     <p>Already have an account? Sign in <a href = "/account">here</a></p>
    </div>
  );
 }

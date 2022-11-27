@@ -31,7 +31,7 @@ export const Buy = () => {
 
         <h2>Cars for sale</h2>
         <h3>Search by name</h3>
-
+        
         <div className="searchbar">
         <p>
         <input
