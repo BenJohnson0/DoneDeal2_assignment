@@ -1,7 +1,7 @@
 .footergrid-container {
     margin-top: 0px;  
     display: grid;
-    height: 550px;
+    height: 40vh;
     grid-template-columns: 400px 400px;
     justify-content: space-evenly;
     background-color: #fe0000; 
@@ -45,8 +45,5 @@ iframe {
         font-size: 20px;
     }
 
-    .googlemaps {
-        display: none;
-    }
 } 
   

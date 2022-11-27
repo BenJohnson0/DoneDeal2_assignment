@@ -5,18 +5,18 @@ import "./account.css";
 //name: admin, password: password
 export default function Login() {
 
- const [form, setform] = useState({
-   name: "",
-   password: "",
-   records: [],
- });
- const navigate = useNavigate();
-
- function updateForm(value) {
-    return setform((prev) => {
-      return { ...prev, ...value };
+    const [form, setform] = useState({
+    name: "",
+    password: "",
+    records: [],
     });
-  }
+    const navigate = useNavigate();
+
+    function updateForm(value) {
+        return setform((prev) => {
+        return { ...prev, ...value };
+        });
+    }
 
     async function onSubmit(e) { 
         
@@ -65,50 +65,49 @@ export default function Login() {
          return;
        }
 
-     //correct details
-      if ((password === record.password) && (name === record.name)) {
-        window.alert(`Login successful.`);
-        navigate("/account");
+        //correct details
+        if ((password === record.password) && (name === record.name)) {
+            window.alert(`Login successful.`);
+            navigate("/account");
 
-        this.setState((state) => {
-          return {
-              isLoggedIn: !state.isLoggedIn,
-          };
-      });
+            this.setState((state) => {
+            return {
+                isLoggedIn: !state.isLoggedIn,
+            };
+            });
 
-        navigate("/account");
-        return;
-    }    
+            navigate("/account");
+            return;
+        }    
   }  
- 
- return (
-    <div className="form">
-    <h2>Log in to continue</h2>
-        <form>
-              <div className="input-container">
-                <label>Username </label>
-                <input type="text" 
-                       name="name" 
-                       value={form.name}
-                       onChange={(e) => updateForm({ name: e.target.value })}
-                       required />
-              </div>
-              <div className="input-container">
-                <label>Password </label>
-                <input type="password"
-                 minlength="6" 
-                 name="pwd"
-                 value={form.password}
-                 onChange={(e) => updateForm({ password: e.target.value })}
-                 required />
-              </div>
 
-              <p>Don't have an account? Sign up <a href = "/create">here</a></p>
-              <div className="button-container">
-                <input type="submit" onClick={onSubmit}></input>
-              </div>
+ return (
+        <div className="form">
+            <h2>Log in to continue</h2>
+            <form>
+                <div className="input-container">
+                    <label>Username </label>
+                    <input type="text" 
+                        name="name" 
+                        value={form.name}
+                        onChange={(e) => updateForm({ name: e.target.value })}
+                        required />
+                </div>
+                <div className="input-container">
+                    <label>Password </label>
+                    <input type="password"
+                    minlength="6" 
+                    name="password"
+                    value={form.password}
+                    onChange={(e) => updateForm({ password: e.target.value })}
+                    required />
+                </div>
+
+                <p>Don't have an account? Sign up <a href = "/create">here</a></p>
+                <div className="button-container">
+                    <input type="submit" onClick={onSubmit}></input>
+                </div>
             </form>
-          </div>
+        </div>
  );
 }
-

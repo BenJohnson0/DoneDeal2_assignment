@@ -21,6 +21,8 @@ class UserAccess extends React.Component {
   }
 
   onSubmitForm() {
+    console.log(this.state)
+
     this.setState((state) => {
       return {
           isLoggedIn: !state.isLoggedIn,
@@ -28,13 +30,15 @@ class UserAccess extends React.Component {
   });
 }
 
-  updateUserState = () => {
-      this.setState((state) => {
-        return {
-            isLoggedIn: !state.isLoggedIn,
-        };
-    });
-  }
+
+updateUserState = () => {
+    this.setState((state) => {
+      return {
+          isLoggedIn: !state.isLoggedIn,
+      };
+  });
+}
+
     
   render() {
       return (
@@ -63,6 +67,7 @@ class UserAccess extends React.Component {
 
         <div class = "accounteditdiv" id="favouritescontainer">
             <h2>Your Favourite Ads</h2>
+
             <p>The ads you favourite will appear here.</p>
         </div>
         
@@ -71,11 +76,18 @@ class UserAccess extends React.Component {
           <button class = "logoutbutton" onClick={this.updateUserState}>Log out</button>
         </div>
 
-      </div>)}
-    </div>
-    );
+      </div>) 
+      
+      || 
+      
+      (<div className="form">
+        
+              </div>) }
+          </div>
+      );
   }
 }
+
 
 const Account = () => {
 

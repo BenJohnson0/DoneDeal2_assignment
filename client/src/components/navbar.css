@@ -88,6 +88,13 @@ li {
     }
 }
 
+@media scren and (max-width: 1800px)  {
+    .mobilenavitem .nav-link {
+        display: block;
+
+    }
+}
+
 #title:hover,.nav-link:hover {
         animation: rotate .5s;
       }
