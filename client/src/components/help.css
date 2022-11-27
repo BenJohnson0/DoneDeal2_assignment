@@ -33,7 +33,7 @@ iframe {
     width: 40vh;
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 1000px) { 
     .helpcontainer {
         display: block;
         width: 60vh;

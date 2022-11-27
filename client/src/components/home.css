@@ -47,7 +47,7 @@
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .homeitem {
     max-width: 40vh;
     margin: 20px auto;

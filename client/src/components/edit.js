@@ -31,7 +31,7 @@ export default function Edit() {
      }
  
      
-    window.alert(`id = ${id}`);
+     window.alert(`id = ${id}`);
      setForm(record);
    }
  
